@@ -15,3 +15,4 @@ public class PlayerInput : MonoBehaviour
         dash = Keyboard.current.shiftKey.wasPressedThisFrame;
     }
 }
+
