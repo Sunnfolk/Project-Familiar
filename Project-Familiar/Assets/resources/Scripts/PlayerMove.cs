@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,9 @@ public class PlayerMove : MonoBehaviour
 
     private PlayerInput m_Input;
     private Rigidbody2D m_Rigidbody2D;
+    [SerializeField] private float dashSpeed = 3f;
+    [SerializeField] private float maxVelocity = -20f;
+    private bool canDash;
 
     private void Start()
     {
@@ -15,8 +19,21 @@ public class PlayerMove : MonoBehaviour
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        
+    }
+
     private void FixedUpdate()
     {
         m_Rigidbody2D.velocity = new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed);
+    }
+
+    private void Dash()
+    {
+        if (m_Input.dash)
+        {
+            
+        }
     }
 }
