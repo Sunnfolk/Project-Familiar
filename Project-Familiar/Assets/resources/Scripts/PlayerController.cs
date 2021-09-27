@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
         void Update()
         {
-            if (m_PlayerHealth == 3f)
+            /*if (m_PlayerHealth == 3f)
             {
                 print("dead");
             }
@@ -30,8 +30,7 @@ public class PlayerController : MonoBehaviour
             if (m_PlayerHealth == 0f)
             {
                 print("dead");
-            }
-
+            }*/
         }
     }
 }

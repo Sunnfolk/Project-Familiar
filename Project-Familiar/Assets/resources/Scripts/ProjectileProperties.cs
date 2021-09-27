@@ -8,11 +8,11 @@ public class ProjectileProperties : MonoBehaviour
     public float m_MinAngleRange;
     public float m_MaxAngleRange;
     [SerializeField] private float m_Lifetime = 1f;
-    private CauldronController m_CauldronController;
+    //private CauldronController m_CauldronController;
     void Start()
     {
-        m_CauldronController = GameObject.Find("Cauldron").GetComponent<CauldronController>();
-        print(m_CauldronController.m_Position);
+        //m_CauldronController = GameObject.Find("Cauldron").GetComponent<CauldronController>();
+        //print(m_CauldronController.m_Position);
         transform.Rotate(0, 0, Random.Range(m_MinAngleRange, m_MaxAngleRange));
         Destroy(gameObject,m_Lifetime);
     }
