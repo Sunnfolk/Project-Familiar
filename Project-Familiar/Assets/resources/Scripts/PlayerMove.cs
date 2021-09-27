@@ -38,7 +38,10 @@ public class PlayerMove : MonoBehaviour
 
      private void ItemCollision(Collider2D other)
      {
-         if (!other.CompareTag("Item")) return;
-         Destroy(other.gameObject);
-    }
-}
+         if (m_Input.interact);
+         if (!other.CompareTag("Apple")) return;
+            {
+                Destroy(other.gameObject);
+            }
+     }       
+     }

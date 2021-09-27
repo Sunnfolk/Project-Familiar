@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Item
+  - Apple
+  - Apple Child
   layers:
   - Default
   - TransparentFX
