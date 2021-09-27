@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Square.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Square.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test scene -EK.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test scene -EK.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
