@@ -8,6 +8,9 @@ TagManager:
   - Item
   - Apple
   - Apple Child
+  - Potion
+  - Tentacle
+  - Book
   layers:
   - Default
   - TransparentFX
