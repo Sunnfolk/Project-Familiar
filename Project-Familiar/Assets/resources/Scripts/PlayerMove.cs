@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float dashSpeed = 3f;
     [SerializeField] private float maxVelocity = -20f;
     private bool canDash;
+    private bool canPick;
+    private bool canDrop;
 
     private void Start()
     {
@@ -29,11 +31,14 @@ public class PlayerMove : MonoBehaviour
         m_Rigidbody2D.velocity = new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed);
     }
 
-    private void Dash()
-    {
-        if (m_Input.dash)
-        {
-            
-        }
+        private void OnTriggerEnter2D(Collider2D other)
+     { 
+         ItemCollision(other);
+     }
+
+     private void ItemCollision(Collider2D other)
+     {
+         if (!other.CompareTag("Item")) return;
+         Destroy(other.gameObject);
     }
 }
