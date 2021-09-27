@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 2145293577}
   - component: {fileID: 2145293576}
   - component: {fileID: 2145293575}
+  - component: {fileID: 2145293580}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Projectile
@@ -235,11 +236,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2145293574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09fc1241986c58478573e01dc1b7bcb, type: 3}
+  m_Script: {fileID: 11500000, guid: f717c3dbd9157724cbce99592fc13821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlayerHealth: 3
-  m_PlayerScore: 0
+  m_Speed: 1
+  m_Angle: 0
 --- !u!50 &2145293576
 Rigidbody2D:
   serializedVersion: 4
@@ -255,7 +256,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -343,3 +344,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2145293580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145293574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0fc1754faf2b1942b895033f4d240ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveVector: {x: 0, y: 0}
