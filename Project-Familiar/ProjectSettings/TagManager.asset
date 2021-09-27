@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Item
+  - Apple
+  - Apple Child
+  - Potion
+  - Tentacle
+  - Book
   layers:
   - Default
   - TransparentFX

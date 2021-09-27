@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/Health.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/1hp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/1hp.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/2hp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/2hp.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/3hp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/3hp.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Books.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Books.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Potion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Potion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Tentacle.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Tentacle.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test scene -EK.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test scene -EK.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Apple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Apple.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +28,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yZyYiLI9EptIsD4YJSsNUtDl7K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -78,7 +89,6 @@
       <workItem from="1632473460615" duration="26000" />
       <workItem from="1632475760194" duration="4612000" />
       <workItem from="1632498118164" duration="2144000" />
-      <workItem from="1632735792364" duration="5876000" />
     </task>
     <servers />
   </component>
