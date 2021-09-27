@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 9012636133152910691}
   - component: {fileID: 9012636133152910688}
   - component: {fileID: 9012636133152910689}
-  - component: {fileID: 9012636133152910702}
-  - component: {fileID: 9012636133152910693}
+  - component: {fileID: 784519158}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Projectile
@@ -124,7 +123,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &9012636133152910702
+--- !u!114 &784519158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,21 +132,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9012636133152910703}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f717c3dbd9157724cbce99592fc13821, type: 3}
+  m_Script: {fileID: 11500000, guid: f3ea8af1d3430644aa3d995f2e723094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 1
+  m_Speed: 10
   m_Angle: 0
---- !u!114 &9012636133152910693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9012636133152910703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0fc1754faf2b1942b895033f4d240ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveVector: {x: 0, y: 0}
+  m_MinAngleRange: 110
+  m_MaxAngleRange: 190
+  m_Lifetime: 1.5

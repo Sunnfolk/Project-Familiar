@@ -10,15 +10,28 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Projectile"))
         {
             //Insert die script here
-            print("dead");
+            m_PlayerHealth--;
         }
 
         void Update()
         {
+            if (m_PlayerHealth == 3f)
+            {
+                print("dead");
+            }
+            if (m_PlayerHealth == 2f)
+            {
+                print("dead");
+            }
+            if (m_PlayerHealth == 1f)
+            {
+                print("dead");
+            }
             if (m_PlayerHealth == 0f)
             {
                 print("dead");
             }
+
         }
     }
 }
