@@ -4,7 +4,7 @@ using UnityEngine;
 public class AngerMeter : MonoBehaviour
 {
     private SpriteRenderer SpriteRenderer;
-    [SerializeField]private float meter = 1f;
+    public float meter = 1f;
     void Start()
     {
         

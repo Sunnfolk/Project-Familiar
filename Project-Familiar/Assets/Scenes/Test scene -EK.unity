@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 1150670890}
   - component: {fileID: 1150670892}
   m_Layer: 0
-  m_Name: Angermeter
+  m_Name: AngerMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b65d47ce52f03d428bb8a63281ca157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: 1
+  meter: 1
 --- !u!1 &1216938553
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,8 +536,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Projectile: {fileID: 9012636133152910703, guid: 4bfa7ee8b6a6d5b4c9f69a5e0c4018bf, type: 3}
   m_Position: {x: 0, y: 0, z: 0}
-  m_ShootFq: 3
-  m_MaxAnger: 15
+  shootFq: 3
+  maxAnger: 5
+  m_Anger: 0
   m_Switch1: 0
   m_Switch2: 0
 --- !u!1001 &1416742494
