@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +25,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/WitchAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>

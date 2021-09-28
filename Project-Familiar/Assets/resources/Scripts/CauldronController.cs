@@ -56,12 +56,23 @@ public class CauldronController : MonoBehaviour
             print("Im super angry");
         }
 
-        if (m_AngerMeter.meter==10)
+        if (m_AngerMeter.meter==10 && !m_Switch1)
         {
             if(shootFq > 0)
             {
                 shootFq -= 0.5f;
             }
+            
+            m_Switch1 = true;
+        }
+        if (m_AngerMeter.meter==19 && !m_Switch2)
+        {
+            if(shootFq > 0)
+            {
+                shootFq -= 0.5f;
+            }
+            
+            m_Switch2 = true;
         }
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
