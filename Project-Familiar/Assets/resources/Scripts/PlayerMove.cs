@@ -14,7 +14,7 @@ public class PlayerMove : MonoBehaviour
     private PlayerInput m_Input;
     private Rigidbody2D m_Rigidbody2D;
     [SerializeField] private float dashSpeed = 3f;
-    [SerializeField] private float dashTimer = 1f; 
+    [SerializeField] private float dashTimer = 1.2f; 
     private float m_DashTimerCounter;
 
     [SerializeField] private float dashDuration= 1;
@@ -51,9 +51,9 @@ public class PlayerMove : MonoBehaviour
 
         if (m_DashTimerCounter <= 0)
         {
+            m_StartTimer = false;
             m_DashTimerCounter = dashTimer;
             m_CanDash= true;
-            m_StartTimer = false;
         }
         if (canDrop && m_Input.interact)
         {
@@ -147,8 +147,8 @@ public class PlayerMove : MonoBehaviour
 
     private void Dash()
     {
-        m_StartTimer = true;
         m_Dashing = true;
+        m_StartTimer = true;
         print(m_Input.KeyLastP);
         if (m_Input.KeyLastP == 0)
         {
