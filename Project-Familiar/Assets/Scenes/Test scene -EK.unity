@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 879762932}
   - component: {fileID: 879762931}
   - component: {fileID: 879762930}
+  - component: {fileID: 879762933}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -309,6 +310,37 @@ Transform:
   m_Father: {fileID: 1216938555}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &879762933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879762929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a525de3b36ddb46ad26a049ccae6d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1123301060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5525445642162285291, guid: f1397fbd7ed144e42954882e6885d9ad, type: 3}
+  m_PrefabInstance: {fileID: 1416742494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1123301061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123301060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09fc1241986c58478573e01dc1b7bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerHealth: 3
+  m_PlayerScore: 0
 --- !u!1 &1216938553
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +442,8 @@ MonoBehaviour:
   m_Position: {x: 0, y: 0, z: 0}
   m_ShootFq: 3
   m_MaxAnger: 15
+  m_Switch1: 0
+  m_Switch2: 0
 --- !u!1001 &1416742494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -649,7 +683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959927280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.87, y: 2.93, z: 0}
+  m_LocalPosition: {x: -6.5, y: 3, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

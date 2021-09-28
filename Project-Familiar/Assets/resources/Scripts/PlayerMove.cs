@@ -32,7 +32,7 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         
-        if (canDrop && m_Input.interact)
+      /*  if (canDrop && m_Input.interact)
         {
             Instantiate(currentPickup, transform.position, quaternion.identity);
             currentPickup = null;
@@ -68,6 +68,7 @@ public class PlayerMove : MonoBehaviour
             canDrop = true;
             
         }
+        */
 
      
     }
@@ -79,7 +80,7 @@ public class PlayerMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
      { 
-         ItemCollision(other);
+         //ItemCollision(other);
      }
 
     private void OnTriggerExit2D(Collider2D other)

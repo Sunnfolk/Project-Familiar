@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class WitchAnimation : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator m_Animator;
+    private CauldronController m_CauldronController;
+    private bool m_Switch1;
     void Start()
     {
-        
+        m_Animator = GetComponent<Animator>();
+        m_CauldronController = GameObject.Find("Cauldron").GetComponent<CauldronController>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (m_CauldronController.m_Switch1 && !m_Switch1)
+        {
+            m_Animator.Play("IdleToAngry");
+            m_Switch1 = true;
+            print("test");
+        }
+       /* else if (m_CauldronController.m_Switch1 && m_Switch1)
+        {
+            m_Animator.Play("Angry");
+        }
+        else
+        {
+            m_Animator.Play("Idle");
+        }*/
     }
 }
