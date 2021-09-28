@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="" />
+    <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/Player Controller.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/Player Controller.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerBackwardsWalkingAnimation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerBackwardsWalkingAnimation.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerForwardWalkingAnimation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerForwardWalkingAnimation.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerLeftWalkingAnimation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerLeftWalkingAnimation.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerRightWalkingAnimation.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerRightWalkingAnimation.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Items/bucket_of_water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Items/bucket_of_water.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Item test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Item test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/PlayerBackIdleAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/PlayerBackIdleAnimation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/PlayerForwardIdleAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/PlayerForwardIdleAnimation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/PlayerLeftIdleAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/PlayerLeftIdleAnimation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/PlayerRightIdleAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/PlayerRightIdleAnimation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/pinkowFrontIdlel-Sheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/pinkowFrontIdlel-Sheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/pinkowlBackIdle-Sheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/pinkowlBackIdle-Sheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/pinkowlSide2Idle-Sheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/pinkowlSide2Idle-Sheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/pinkowlSideIdle-Sheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/pinkowlSideIdle-Sheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerWalkingBackwardsAnimation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerWalkingBackwardsAnimation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerWalkingForwardAnimation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerWalkingForwardAnimation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerWalkingLeftAnimation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerWalkingLeftAnimation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerWalkingRightAnimation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/PlayerWalkingRightAnimation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/pinkowlWalkAnimation-Sheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/pinkowlWalkAnimation-Sheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/pinkowlWalkAnimationBACK-Sheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/pinkowlWalkAnimationBACK-Sheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/pinkowlWalkAnimationSide-Sheet (1)_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/pinkowlWalkAnimationSide-Sheet (1)_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/pinkowlWalkAnimationSide-Sheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Walking/pinkowlWalkAnimationSide-Sheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +65,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -71,7 +118,7 @@
       <workItem from="1632473460615" duration="26000" />
       <workItem from="1632475760194" duration="4612000" />
       <workItem from="1632498118164" duration="2144000" />
-      <workItem from="1632746989160" duration="848000" />
+      <workItem from="1632746989160" duration="3780000" />
     </task>
     <servers />
   </component>
