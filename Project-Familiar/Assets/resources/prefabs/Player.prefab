@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1163593786}
   - component: {fileID: -6382932398549006202}
   - component: {fileID: -556088785104869454}
+  - component: {fileID: -1885582637687195301}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3199729989438715099, guid: db1a6e2acc616d441beae9216f7ba3e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -124,13 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6b805488188364b9aef56848954589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 3.5
   m_Dashing: 0
-  dashSpeed: 10
+  dashSpeed: 5
   dashTimer: 1.1
   dashDuration: 1
-  lookingAtPickup: {fileID: 0}
-  currentPickup: {fileID: 0}
 --- !u!114 &5525445642162285284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +194,7 @@ MonoBehaviour:
   - {fileID: 2461610277182476150, guid: cd9cb45c6e5c61441ae6cda32facd6cc, type: 3}
   - {fileID: 7477832987043847440, guid: 86ce3db32d5097e408c5f945be71e8e6, type: 3}
   - {fileID: 955586956248223102, guid: 1fbe92ccd0d7bae4d9c60a6c4616ca67, type: 3}
-  - {fileID: 1345355516266183960, guid: c4276f8ba7d776b42905d169ffcb7c99, type: 3}
+  - {fileID: 6997432424895470040, guid: 89841651444eb6f4488d33fc94d88ebd, type: 3}
   currentItem: {fileID: 0}
   canPickup: 0
   canDrop: 0
@@ -230,3 +229,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0.007668674, y: -0.05112493}
   m_Size: {x: 0.48478854, y: 0.8937876}
   m_Direction: 0
+--- !u!114 &-1885582637687195301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5525445642162285291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1024046b8263fa74fbbc680c48fb62e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemPrefabs:
+  - {fileID: 3806321388856769145, guid: a1953d04fcd8fab40abf36d9313cd6c8, type: 3}
+  - {fileID: 2461610277182476150, guid: cd9cb45c6e5c61441ae6cda32facd6cc, type: 3}
+  - {fileID: 7477832987043847440, guid: 86ce3db32d5097e408c5f945be71e8e6, type: 3}
+  - {fileID: 955586956248223102, guid: 1fbe92ccd0d7bae4d9c60a6c4616ca67, type: 3}
+  currentItem: {fileID: 0}
+  canPickup: 0
+  canDrop: 0
+  prefabObject: {fileID: 0}
+  colliderObject: {fileID: 0}

@@ -45,6 +45,7 @@ public class InventorySystem : MonoBehaviour
         
         foreach (var item in ItemPrefabs)
         {
+            if (item == null) continue;
             if (other.CompareTag(item.tag))
             {
                 canPickup = true;

@@ -52,7 +52,8 @@ public class PlayerMove : MonoBehaviour
     {
         if (!m_Dashing)
         {
-            m_Rigidbody2D.velocity = new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed);
+            m_Rigidbody2D.velocity =
+                Vector2.ClampMagnitude(new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed), moveSpeed);
         }
     }
 

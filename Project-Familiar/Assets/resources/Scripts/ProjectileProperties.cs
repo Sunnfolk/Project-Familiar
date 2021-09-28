@@ -15,7 +15,13 @@ public class ProjectileProperties : MonoBehaviour
         transform.Rotate(0, 0, Random.Range(m_MinAngleRange, m_MaxAngleRange));
         Destroy(gameObject,m_Lifetime);
     }
-
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
   
     void Update()
     {
