@@ -323,8 +323,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Projectile: {fileID: 9012636133152910703, guid: 4bfa7ee8b6a6d5b4c9f69a5e0c4018bf, type: 3}
   m_Position: {x: 0, y: 0, z: 0}
-  m_TimerCounter: 0
-  m_Timer: 2
+  m_ShootFq: 3
+  m_AngerTimer: 2
+  m_Anger: 20
 --- !u!1001 &1416742494
 PrefabInstance:
   m_ObjectHideFlags: 0

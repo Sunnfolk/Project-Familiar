@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class ProjectileProperties : MonoBehaviour
 {
     [SerializeField] private float m_Speed= 1f;
-    [SerializeField] private float m_Angle;
     public float m_MinAngleRange;
     public float m_MaxAngleRange;
     [SerializeField] private float m_Lifetime = 1f;
