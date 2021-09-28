@@ -9,13 +9,15 @@ public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 5f;
     [HideInInspector]public bool m_Dashing;
-    private bool m_CanDash= true;
+    private bool m_CanDash = true;
+    private bool m_StartTimer;
     private PlayerInput m_Input;
     private Rigidbody2D m_Rigidbody2D;
-    private bool m_Timerstop;
     [SerializeField] private float dashSpeed = 3f;
     [SerializeField] private float dashTimer = 1f; 
-    [SerializeField] private float m_DashTimerCounter;
+    private float m_DashTimerCounter;
+
+    [SerializeField] private float dashDuration= 1;
     //[SerializeField] private float maxVelocity = -20f;
     private bool canPick;
     private bool canDrop = false;
@@ -36,24 +38,14 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        /*if (m_DashCooldownCounter > 0)
-        {
-            m_DashCooldownCounter -= Time.deltaTime;
-        }
-        if (m_DashCooldownCounter <= 0)
-        {
-            m_DashCooldownCounter = dashCooldown;
-            m_Dashing = false;
-        }*/
-        
-        
-        if (m_DashTimerCounter > 0 && m_Dashing)
+        if (m_DashTimerCounter > 0 && m_StartTimer)
         {
             m_DashTimerCounter -= Time.deltaTime;
         }
 
-        if (m_DashTimerCounter <= 1)
+        if (m_DashTimerCounter <= dashDuration)
         {
+            m_CanDash=false;
             m_Dashing = false;
         }
 
@@ -61,6 +53,7 @@ public class PlayerMove : MonoBehaviour
         {
             m_DashTimerCounter = dashTimer;
             m_CanDash= true;
+            m_StartTimer = false;
         }
         if (canDrop && m_Input.interact)
         {
@@ -154,6 +147,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Dash()
     {
+        m_StartTimer = true;
         m_Dashing = true;
         print(m_Input.KeyLastP);
         if (m_Input.KeyLastP == 0)

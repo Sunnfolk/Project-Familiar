@@ -363,7 +363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5525445642162285285, guid: f1397fbd7ed144e42954882e6885d9ad, type: 3}
       propertyPath: dashTimer
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5525445642162285291, guid: f1397fbd7ed144e42954882e6885d9ad, type: 3}
       propertyPath: m_Name
