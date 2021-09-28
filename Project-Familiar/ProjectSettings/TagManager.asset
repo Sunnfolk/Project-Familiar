@@ -12,6 +12,8 @@ TagManager:
   - Tentacle
   - Book
   - Bucket
+  - chest
+  - Superior Bucket
   layers:
   - Default
   - TransparentFX

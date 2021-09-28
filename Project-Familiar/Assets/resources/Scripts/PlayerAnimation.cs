@@ -23,10 +23,9 @@ public class PlayerAnimation : MonoBehaviour
         m_Input = GetComponent<PlayerInput>();
         m_Rigidbody = GetComponent<Rigidbody2D>();
     }
-
+    
     private void Update()
     {
-
         if (m_Input.moveVector != Vector2.zero)
         {
             m_Animator.SetFloat(Vertical, m_Input.moveVector.y);
@@ -36,6 +35,6 @@ public class PlayerAnimation : MonoBehaviour
         else
         {
             m_Animator.SetBool(IsWalking, false);
-        }
+        }   
     }
 }

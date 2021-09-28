@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 5525445642162285281}
   - component: {fileID: 5525445642162285280}
   - component: {fileID: 5525445642162285287}
-  - component: {fileID: 5525445642162285286}
   - component: {fileID: 5525445642162285285}
   - component: {fileID: 5525445642162285284}
   - component: {fileID: 1163593784}
   - component: {fileID: 1163593785}
   - component: {fileID: 1163593786}
   - component: {fileID: -6382932398549006202}
+  - component: {fileID: -556088785104869454}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3199729989438715099, guid: db1a6e2acc616d441beae9216f7ba3e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -112,22 +112,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &5525445642162285286
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5525445642162285291}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!114 &5525445642162285285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,4 +214,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PlayerHealth: 3
-  m_PlayerScore: 0
+--- !u!70 &-556088785104869454
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5525445642162285291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.007668674, y: -0.05112493}
+  m_Size: {x: 0.48478854, y: 0.8937876}
+  m_Direction: 0
