@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Item test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Item test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Background art/Space_Witch_Space_Background_Animated1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Background art/Space_Witch_Space_Background_Animated1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Background art/Space_Witch_Space_Background_Animated2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Background art/Space_Witch_Space_Background_Animated2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +80,7 @@
       <workItem from="1632473460615" duration="26000" />
       <workItem from="1632475760194" duration="4612000" />
       <workItem from="1632498118164" duration="2144000" />
-      <workItem from="1632746989160" duration="7799000" />
+      <workItem from="1632746989160" duration="8577000" />
     </task>
     <servers />
   </component>
