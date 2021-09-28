@@ -437,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meter: 1
+  AngerStop: 0
 --- !u!1 &1216938553
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,10 +538,10 @@ MonoBehaviour:
   m_Projectile: {fileID: 9012636133152910703, guid: 4bfa7ee8b6a6d5b4c9f69a5e0c4018bf, type: 3}
   m_Position: {x: 0, y: 0, z: 0}
   shootFq: 3
-  maxAnger: 5
-  m_Anger: 0
+  angerIncreaseFq: 2
   m_Switch1: 0
   m_Switch2: 0
+  minShootFq: 0.1
 --- !u!1001 &1416742494
 PrefabInstance:
   m_ObjectHideFlags: 0

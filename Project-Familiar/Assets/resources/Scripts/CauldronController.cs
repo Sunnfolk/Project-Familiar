@@ -9,17 +9,18 @@ public class CauldronController : MonoBehaviour
     public Vector3 m_Position;
     private float m_ShootCounter;
     [SerializeField] private float shootFq =5f;
-    [SerializeField] private float maxAnger = 20f;
-    [SerializeField]private float m_Anger;
+    [SerializeField] private float angerIncreaseFq = 2f;
+    private float m_Anger;
     [HideInInspector]public bool m_Switch1;
     [HideInInspector] public bool m_Switch2;
+    [SerializeField] private float minShootFq = 0.1f;
     
     
     void Start()
     {
         m_AngerMeter = GameObject.Find("AngerMeter").GetComponent<AngerMeter>();
         m_ShootCounter = shootFq;
-        m_Anger = maxAnger;
+        m_Anger = angerIncreaseFq;
         m_Position = transform.position;
     }
     void Update()
@@ -33,7 +34,11 @@ public class CauldronController : MonoBehaviour
             m_ShootCounter = shootFq;
             ShootProjectile();
         }
-        if (m_Anger > 0)
+        if (shootFq <= 0)
+        {
+            shootFq = minShootFq;
+        }
+        if (m_Anger > 0 && !m_AngerMeter.AngerStop)
         {
             m_Anger -= Time.deltaTime;
         }
@@ -43,12 +48,20 @@ public class CauldronController : MonoBehaviour
             print("Angrier");
             m_Switch1 = true;
         }*/
+        
         if (m_Anger <= 0)
         {
-            m_Anger = maxAnger;
-            shootFq -= 0.5f;
+            m_Anger = angerIncreaseFq;
             m_AngerMeter.meter++;
             print("Im super angry");
+        }
+
+        if (m_AngerMeter.meter==10)
+        {
+            if(shootFq > 0)
+            {
+                shootFq -= 0.5f;
+            }
         }
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
