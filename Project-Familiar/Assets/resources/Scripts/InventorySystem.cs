@@ -21,7 +21,7 @@ public class InventorySystem : MonoBehaviour
 
     private void Update()
     {
-        if (_input.interact && canPickup)
+        if (_input.interact && canPickup && currentItem == null)
         {
             currentItem = prefabObject;
             Destroy(colliderObject);
@@ -41,6 +41,8 @@ public class InventorySystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (currentItem != null) return;
+        
         foreach (var item in ItemPrefabs)
         {
             if (other.CompareTag(item.tag))
