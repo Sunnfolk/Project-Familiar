@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class CauldronController : MonoBehaviour
 {
+    
     public GameObject m_Projectile;
     public Vector3 m_Position;
     private float m_ShootCounter;
@@ -11,6 +12,8 @@ public class CauldronController : MonoBehaviour
     private float m_Anger;
     [HideInInspector]public bool m_Switch1;
     [HideInInspector] public bool m_Switch2;
+    
+    
     void Start()
     {
         m_ShootCounter = m_ShootFq;
@@ -42,6 +45,7 @@ public class CauldronController : MonoBehaviour
             m_ShootFq -= 0.5f;
             print("Angrier");
             m_Switch1 = true;
+            
         }
         
         if (m_Anger <= 0 && !m_Switch2)
