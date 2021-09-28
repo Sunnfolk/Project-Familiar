@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/TestScipt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/TestScipt.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch/Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch/Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch/IdleToAngry.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch/IdleToAngry.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch/SpaceWitchIdle-Sheet_0 (1).controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch/SpaceWitchIdle-Sheet_0 (1).controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch/SpaceWitchIdle-Sheet_0.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Witch/SpaceWitchIdle-Sheet_0.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitcIdlePissed-Sheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitcIdlePissed-Sheet.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitchAngrytoLivid-Sheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitchAngrytoLivid-Sheet.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitchIdle-Sheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitchIdle-Sheet.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitchIdletoAngry-Sheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitchIdletoAngry-Sheet.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitchLividIdle-Sheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Witch/SpaceWitchLividIdle-Sheet.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test scene -EK.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test scene -EK.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Health/1hp.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/1hp.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Health/2hp.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/2hp.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Health/3hp.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Health/3hp.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +46,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/TestScipt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yZyYiLI9EptIsD4YJSsNUtDl7K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
