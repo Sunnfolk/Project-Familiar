@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1163593784}
   - component: {fileID: 1163593785}
   - component: {fileID: 1163593786}
+  - component: {fileID: -6382932398549006202}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -140,8 +141,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  dashSpeed: 3
-  maxVelocity: -20
+  m_Dashing: 0
+  dashSpeed: 10
+  dashTimer: 1.1
+  dashDuration: 1
   lookingAtPickup: {fileID: 0}
   currentPickup: {fileID: 0}
 --- !u!114 &5525445642162285284
@@ -159,6 +162,7 @@ MonoBehaviour:
   moveVector: {x: 0, y: 0}
   dash: 0
   interact: 0
+  KeyLastP: 0
 --- !u!95 &1163593784
 Animator:
   serializedVersion: 3
@@ -213,3 +217,17 @@ MonoBehaviour:
   canDrop: 0
   prefabObject: {fileID: 0}
   colliderObject: {fileID: 0}
+--- !u!114 &-6382932398549006202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5525445642162285291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09fc1241986c58478573e01dc1b7bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerHealth: 3
+  m_PlayerScore: 0
