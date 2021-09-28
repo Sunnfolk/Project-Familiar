@@ -8,15 +8,18 @@ using UnityEngine.Serialization;
 public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 5f;
-
+    [HideInInspector]public bool m_Dashing;
     private PlayerInput m_Input;
     private Rigidbody2D m_Rigidbody2D;
     [SerializeField] private float dashSpeed = 3f;
-    [SerializeField] private float maxVelocity = -20f;
+    [SerializeField] private float dashTimer = 1f;
+    [SerializeField] private float m_DashTimerCounter;
+    //[SerializeField] private float maxVelocity = -20f;
     private bool canDash;
     private bool canPick;
     private bool canDrop = false;
     private bool applePicked;
+    
 
     [FormerlySerializedAs("currentPickup")] public GameObject lookingAtPickup;
     public GameObject currentPickup;
@@ -27,11 +30,21 @@ public class PlayerMove : MonoBehaviour
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         applePicked = false;
         currentPickup = null;
+        m_DashTimerCounter = dashTimer;
     }
 
     private void Update()
     {
-        
+        if (m_DashTimerCounter > 0 && m_Dashing)
+        {
+            m_DashTimerCounter -= Time.deltaTime;
+        }
+
+        if (m_DashTimerCounter <= 0)
+        {
+            m_DashTimerCounter = dashTimer;
+            m_Dashing = false;
+        }
         if (canDrop && m_Input.interact)
         {
             Instantiate(currentPickup, transform.position, quaternion.identity);
@@ -68,13 +81,19 @@ public class PlayerMove : MonoBehaviour
             canDrop = true;
             
         }
+        if (m_Input.dash)
+        {
+            Dash();
+        }
 
-     
     }
 
     private void FixedUpdate()
     {
-        m_Rigidbody2D.velocity = new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed);
+        if (!m_Dashing)
+        {
+            m_Rigidbody2D.velocity = new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -115,4 +134,26 @@ public class PlayerMove : MonoBehaviour
          }
 
      }
+
+    private void Dash()
+    {
+        m_Dashing = true;
+        print(m_Input.KeyLastP);
+        if (m_Input.KeyLastP == 0)
+        {
+            m_Rigidbody2D.AddForce(Vector2.up * dashSpeed, ForceMode2D.Impulse);
+        }
+        if (m_Input.KeyLastP == 1)
+        {
+            m_Rigidbody2D.AddForce(Vector2.down * dashSpeed, ForceMode2D.Impulse);
+        }
+        if (m_Input.KeyLastP == 2)
+        {
+            m_Rigidbody2D.AddForce(Vector2.left * dashSpeed, ForceMode2D.Impulse);
+        }
+        if (m_Input.KeyLastP == 3)
+        {
+            m_Rigidbody2D.AddForce(Vector2.right * dashSpeed, ForceMode2D.Impulse);
+        }
+    }
 }
