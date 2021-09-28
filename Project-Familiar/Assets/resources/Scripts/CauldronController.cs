@@ -6,7 +6,7 @@ public class CauldronController : MonoBehaviour
 {
     private AngerMeter m_AngerMeter;
     public GameObject m_Projectile;
-    public Vector3 m_Position;
+    [HideInInspector] public Vector3 m_Position;
     private float m_ShootCounter;
     [SerializeField] private float shootFq =5f;
     [SerializeField] private float angerIncreaseFq = 2f;
