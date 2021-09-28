@@ -11,6 +11,11 @@ public class PlayerAnimation : MonoBehaviour
     private Rigidbody2D m_Rigidbody;
 
     private static readonly int Walk = Animator.StringToHash("Walk");
+    
+    
+    private static readonly int IsWalking = Animator.StringToHash("IsWalking");
+    private static readonly int Horizontal = Animator.StringToHash("horizontal");
+    private static readonly int Vertical = Animator.StringToHash("vertical");
 
     private void Start()
     {
@@ -21,16 +26,16 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Update()
     {
-        m_Animator.SetFloat("vertical", m_Input.moveVector.y);
-        m_Animator.SetFloat("horizontal", m_Input.moveVector.x);
 
         if (m_Input.moveVector != Vector2.zero)
         {
-            m_Animator.Play("Walking");
+            m_Animator.SetFloat(Vertical, m_Input.moveVector.y);
+            m_Animator.SetFloat(Horizontal, m_Input.moveVector.x);
+            m_Animator.SetBool(IsWalking, true);
         }
         else
         {
-            m_Animator.Play("Idle");
+            m_Animator.SetBool(IsWalking, false);
         }
     }
 }
