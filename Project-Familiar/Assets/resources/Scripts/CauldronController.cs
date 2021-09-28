@@ -9,8 +9,8 @@ public class CauldronController : MonoBehaviour
     [SerializeField] private float m_ShootFq =5f;
     [SerializeField] private float m_MaxAnger = 20f;
     private float m_Anger;
-    private bool m_Switch1;
-    private bool m_Switch2;
+    [HideInInspector]public bool m_Switch1;
+    [HideInInspector] public bool m_Switch2;
     void Start()
     {
         m_ShootCounter = m_ShootFq;
