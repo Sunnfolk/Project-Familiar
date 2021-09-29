@@ -13,6 +13,8 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenu.GameIsPaused) return;
+        
         moveVector.x = (Keyboard.current.aKey.isPressed ? -1f : 0f) + (Keyboard.current.dKey.isPressed ? 1f : 0f);
         moveVector.y = (Keyboard.current.sKey.isPressed ? -1f : 0f) + (Keyboard.current.wKey.isPressed ? 1f : 0f);
 

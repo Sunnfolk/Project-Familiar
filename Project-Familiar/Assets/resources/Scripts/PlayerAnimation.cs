@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
@@ -26,6 +27,8 @@ public class PlayerAnimation : MonoBehaviour
     
     private void Update()
     {
+        if (PauseMenu.GameIsPaused) return;
+        
         if (m_Input.moveVector != Vector2.zero)
         {
             m_Animator.SetFloat(Vertical, m_Input.moveVector.y);
