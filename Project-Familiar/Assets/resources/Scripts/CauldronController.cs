@@ -13,6 +13,8 @@ public class CauldronController : MonoBehaviour
     [HideInInspector]public bool m_Switch1;
     [HideInInspector] public bool m_Switch2;
     [SerializeField] private float minShootFq = 0.1f;
+    [SerializeField] private float Stage1ShootFqIncrease = 0.5f;
+    [SerializeField] private float Stage2ShootFqIncrease = 0.5f;
     
     
     void Start()
@@ -59,7 +61,7 @@ public class CauldronController : MonoBehaviour
         {
             if(shootFq > 0)
             {
-                shootFq -= 0.5f;
+                shootFq -= Stage1ShootFqIncrease;
             }
             
             m_Switch1 = true;
@@ -68,7 +70,7 @@ public class CauldronController : MonoBehaviour
         {
             if(shootFq > 0)
             {
-                shootFq -= 0.5f;
+                shootFq -= Stage2ShootFqIncrease;
             }
             
             m_Switch2 = true;

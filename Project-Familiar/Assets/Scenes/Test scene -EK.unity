@@ -813,6 +813,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5525445642162285291, guid: f1397fbd7ed144e42954882e6885d9ad, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5525445642162285291, guid: f1397fbd7ed144e42954882e6885d9ad, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -830,7 +834,7 @@ GameObject:
   - component: {fileID: 1449779148}
   - component: {fileID: 1449779150}
   - component: {fileID: 1449779151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
