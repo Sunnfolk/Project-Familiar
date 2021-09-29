@@ -1,38 +1,83 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class ItemRequest : MonoBehaviour
 {
+    [SerializeField]private float angerMeterDecrease = 1;
+    private AngerMeter m_AngerMeter;
+    private CauldronController m_CauldronController;
     public GameObject[] requestItems;
+    public Transform[] spawnPoints;
     private int m_NumberOfItems;
-    private GameObject m_CollidingObject;
+    private List<GameObject> m_SpawnedItems = new List<GameObject>();
+    private GameObject m_RightGameObject;
+    private bool m_Success;
+    private GameObject m_ObejctToDestroy;
+    private bool m_Wrong;
+    private int m_NumberOfSuccess;
+
+    private void Start()
+    {
+        m_CauldronController = GetComponent<CauldronController>();
+        m_AngerMeter = GameObject.Find("AngerMeter").GetComponent<AngerMeter>();
+        SpawnRequests();
+    }
 
     void Update()
     {
-        if (Keyboard.current.yKey.wasPressedThisFrame)
+        if (m_Success)
         {
+            m_Wrong = false;
+            m_ObejctToDestroy = GameObject.FindWithTag(m_RightGameObject.tag);
+            m_SpawnedItems.Remove(m_ObejctToDestroy);
+            Destroy(m_ObejctToDestroy);
+            Destroy(m_RightGameObject);
+            m_Success = false;
+            m_NumberOfSuccess++;
+        }
 
-            for (int item = 0; item < 3; item++)
+        if (m_NumberOfSuccess == 3)
+        {
+            m_NumberOfSuccess = 0;
+            m_AngerMeter.meter -= angerMeterDecrease;
+            SpawnRequests();
+        }
+
+        if (m_Wrong)
+        {
+            m_CauldronController.angerIncreaseFq -= 0.5f;
+            m_Wrong = false;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        foreach (var item in m_SpawnedItems)
+        {
+            if (other.CompareTag(item.tag))
             {
-                m_NumberOfItems = Random.Range(0, requestItems.Length);
-                Instantiate(requestItems[m_NumberOfItems],
-                    GameObject.FindGameObjectWithTag("RSpawnpoint" + item).transform.position, new Quaternion());
-
-                //if (m_CollidingObject == null) return;
-                //Instantiate(m_CollidingObject, GameObject.FindGameObjectWithTag("RSpawnpoint"+0).transform.position, new Quaternion());
+                m_RightGameObject = other.gameObject;
+                m_Success = true;
+                
+                print("succ");
             }
-
-            if (Keyboard.current.rKey.wasPressedThisFrame)
+            else
             {
-                print(m_CollidingObject);
+                m_Wrong = true;
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void SpawnRequests()
     {
-        print("triggerd");
-        m_CollidingObject = other.gameObject;
+        for (int item = 0; item < 3; item++)
+        {
+            m_NumberOfItems = Random.Range(0, requestItems.Length);
+            var clone = Instantiate(requestItems[m_NumberOfItems], spawnPoints[item].position, new Quaternion()); 
+            m_SpawnedItems.Add(clone);
+        }
     }
 }
