@@ -1,16 +1,20 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SpawnScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] spawnItems;
+    public Transform[] spawnPoints;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Keyboard.current.hKey.wasPressedThisFrame)
+        {
+            for (int i = 0; i < spawnItems.Length; i++)
+            {
+                var clone = Instantiate(spawnItems[i], spawnPoints[i].position, new Quaternion());
+                Destroy(clone, 30f);
+            }
+        }
     }
 }
