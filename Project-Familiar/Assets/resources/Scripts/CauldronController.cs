@@ -59,6 +59,10 @@ public class CauldronController : MonoBehaviour
             
             m_Switch1 = true;
         }
+        else
+        {
+            m_Switch1 = false;
+        }
         if (m_AngerMeter.meter==19 && !m_Switch2)
         {
             if(shootFq > 0)
@@ -67,6 +71,10 @@ public class CauldronController : MonoBehaviour
             }
             
             m_Switch2 = true;
+        }
+        else
+        {
+            m_Switch2 = false;
         }
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
