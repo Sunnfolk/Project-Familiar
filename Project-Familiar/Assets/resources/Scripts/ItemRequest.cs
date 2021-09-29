@@ -7,39 +7,54 @@ public class ItemRequest : MonoBehaviour
 {
     public GameObject[] requestItems;
     private int m_NumberOfItems;
-    private GameObject m_CollidingObject;
-    private List<GameObject> _spawnedItems = new List<GameObject>();
+    private List<GameObject> m_SpawnedItems = new List<GameObject>();
+    private GameObject m_RightGameObject;
+    private bool m_Succes;
+    private GameObject m_ObejctToDestroy;
 
     void Update()
     {
         if (Keyboard.current.yKey.wasPressedThisFrame)
         {
-
             for (int item = 0; item < 3; item++)
             {
                 m_NumberOfItems = Random.Range(0, requestItems.Length);
                 var clone = Instantiate(requestItems[m_NumberOfItems],
                     GameObject.FindGameObjectWithTag("RSpawnpoint" + item).transform.position, new Quaternion()); 
-                _spawnedItems.Add(clone);
-                
-                //if (m_CollidingObject == null) return;
-                //Instantiate(m_CollidingObject, GameObject.FindGameObjectWithTag("RSpawnpoint"+0).transform.position, new Quaternion());
+                m_SpawnedItems.Add(clone);
             }
         }
-        if (Keyboard.current.rKey.wasPressedThisFrame)
+
+        if (m_Succes)
         {
-            print(m_CollidingObject);
+            m_ObejctToDestroy = GameObject.FindWithTag(m_RightGameObject.tag);
+            m_SpawnedItems.Remove(m_ObejctToDestroy);
+            Destroy(m_ObejctToDestroy);
+            Destroy(m_RightGameObject);
+            m_Succes = false;
+        }
+       
+
+        if (Keyboard.current.xKey.wasPressedThisFrame)
+        {
+            print("Destroy "+m_ObejctToDestroy);
+            print("Right "+m_RightGameObject);
         }
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        foreach (var item in _spawnedItems)
+        foreach (var item in m_SpawnedItems)
         {
             if (other.CompareTag(item.tag))
             {
-                Destroy(other);
+                m_RightGameObject = other.gameObject;
+                m_Succes = true;
                 
+                print("succ");
+            }
+            else
+            {
+                print("FALSE");
             }
         }
     }
