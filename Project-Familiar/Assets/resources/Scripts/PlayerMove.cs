@@ -62,7 +62,6 @@ public class PlayerMove : MonoBehaviour
         m_StartTimer = true;
         m_Dashing = true;
         m_StartTimer = true;
-        print(m_Input.KeyLastP);
         if (m_Input.KeyLastP == 0)
         {
             m_Rigidbody2D.AddForce(Vector2.up * dashSpeed, ForceMode2D.Impulse);

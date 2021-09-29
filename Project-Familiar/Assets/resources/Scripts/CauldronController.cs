@@ -54,7 +54,6 @@ public class CauldronController : MonoBehaviour
         {
             m_Anger = angerIncreaseFq;
             m_AngerMeter.meter++;
-            print("Im super angry");
         }
 
         if (m_AngerMeter.meter==10 && !m_Switch1)
