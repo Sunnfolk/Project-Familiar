@@ -226,6 +226,7 @@ MonoBehaviour:
   - {fileID: 5420119473665045145, guid: d3c5db5e120ffe540bf4ad0d5c676a35, type: 3}
   - {fileID: 104755957837849784, guid: 8c5adc81ce5a7a24a9ce5e49856f5745, type: 3}
   - {fileID: 2950542744403582108, guid: 5f7a1cd508714f04386ac8db6f5c161d, type: 3}
+  - {fileID: 6997432424895470040, guid: 89841651444eb6f4488d33fc94d88ebd, type: 3}
   currentItem: {fileID: 0}
   canPickup: 0
   canDrop: 0
