@@ -312,6 +312,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302232576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5489310544911333256, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
+  m_PrefabInstance: {fileID: 5489310543979738545}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &302232580
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302232576}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &302232581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302232576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11fcc8cf4bedf25429107965b198e29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requestItems:
+  - {fileID: 7477832987043847440, guid: 86ce3db32d5097e408c5f945be71e8e6, type: 3}
+  - {fileID: 955586956248223102, guid: 1fbe92ccd0d7bae4d9c60a6c4616ca67, type: 3}
+  - {fileID: 3806321388856769145, guid: a1953d04fcd8fab40abf36d9313cd6c8, type: 3}
+  - {fileID: 2461610277182476150, guid: cd9cb45c6e5c61441ae6cda32facd6cc, type: 3}
+  spawnPoints:
+  - {fileID: 385855784}
+  - {fileID: 1720790748}
+  - {fileID: 421844408}
 --- !u!1 &326603789
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +459,7 @@ GameObject:
   - component: {fileID: 385855785}
   m_Layer: 0
   m_Name: Square
-  m_TagString: RSpawnpoint0
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,7 +542,7 @@ GameObject:
   - component: {fileID: 421844409}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: RSpawnpoint2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -832,7 +884,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1449779149}
   - component: {fileID: 1449779148}
-  - component: {fileID: 1449779150}
   - component: {fileID: 1449779151}
   - component: {fileID: 1449779152}
   m_Layer: 6
@@ -902,7 +953,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449779147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.096469, y: 2.6429358, z: 0}
+  m_LocalPosition: {x: 4.65, y: 2.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 385855784}
@@ -911,24 +962,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1449779150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1449779147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11fcc8cf4bedf25429107965b198e29b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requestItems:
-  - {fileID: 3806321388856769145, guid: a1953d04fcd8fab40abf36d9313cd6c8, type: 3}
-  - {fileID: 2461610277182476150, guid: cd9cb45c6e5c61441ae6cda32facd6cc, type: 3}
-  - {fileID: 6997432424895470040, guid: 89841651444eb6f4488d33fc94d88ebd, type: 3}
-  - {fileID: 7477832987043847440, guid: 86ce3db32d5097e408c5f945be71e8e6, type: 3}
-  - {fileID: 955586956248223102, guid: 1fbe92ccd0d7bae4d9c60a6c4616ca67, type: 3}
 --- !u!61 &1449779151
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1071,7 +1104,7 @@ GameObject:
   - component: {fileID: 1720790749}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: RSpawnpoint1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1153,6 +1186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cauldron
       objectReference: {fileID: 0}
+    - target: {fileID: 5489310544911333256, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5489310544911333258, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1201,6 +1238,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4423821331615346138, guid: 3b22c71c9f16d924cbac76df6fee4796, type: 3}
+    - target: {fileID: 5489310544911333261, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
+      propertyPath: Stage1ShootFqIncrease
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5489310544911333261, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
+      propertyPath: Stage2ShootFqIncrease
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
 --- !u!1001 &7679253120940237684

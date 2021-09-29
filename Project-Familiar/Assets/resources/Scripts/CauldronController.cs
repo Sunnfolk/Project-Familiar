@@ -8,7 +8,7 @@ public class CauldronController : MonoBehaviour
     [HideInInspector] public Vector3 m_Position;
     private float m_ShootCounter;
     [SerializeField] private float shootFq =5f;
-    [SerializeField] private float angerIncreaseFq = 2f;
+    public float angerIncreaseFq = 2f;
     private float m_Anger;
     [HideInInspector]public bool m_Switch1;
     [HideInInspector] public bool m_Switch2;
@@ -43,13 +43,7 @@ public class CauldronController : MonoBehaviour
         {
             m_Anger -= Time.deltaTime;
         }
-        /*if (m_Anger <= 10 && !m_Switch1)
-        {
-            m_ShootFq -= 0.5f;
-            print("Angrier");
-            m_Switch1 = true;
-        }*/
-        
+
         if (m_Anger <= 0)
         {
             m_Anger = angerIncreaseFq;
