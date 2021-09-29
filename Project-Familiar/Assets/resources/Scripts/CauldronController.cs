@@ -13,8 +13,8 @@ public class CauldronController : MonoBehaviour
     [HideInInspector]public bool m_Switch1;
     [HideInInspector] public bool m_Switch2;
     [SerializeField] private float minShootFq = 0.1f;
-    [SerializeField] private float Stage1ShootFqIncrease;
-    [SerializeField] private float Stage2ShootFqIncrease;
+    [SerializeField] private float Stage1ShootFqIncrease = 0.5f;
+    [SerializeField] private float Stage2ShootFqIncrease = 0.5f;
     
     
     void Start()
