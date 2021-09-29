@@ -246,6 +246,9 @@ MonoBehaviour:
   - {fileID: 2461610277182476150, guid: cd9cb45c6e5c61441ae6cda32facd6cc, type: 3}
   - {fileID: 7477832987043847440, guid: 86ce3db32d5097e408c5f945be71e8e6, type: 3}
   - {fileID: 955586956248223102, guid: 1fbe92ccd0d7bae4d9c60a6c4616ca67, type: 3}
+  - {fileID: 1628550812414483330, guid: e13f64251d5676244bcd6c78ba8c5135, type: 3}
+  - {fileID: 5420119473665045145, guid: d3c5db5e120ffe540bf4ad0d5c676a35, type: 3}
+  - {fileID: 104755957837849784, guid: 8c5adc81ce5a7a24a9ce5e49856f5745, type: 3}
   currentItem: {fileID: 0}
   canPickup: 0
   canDrop: 0
