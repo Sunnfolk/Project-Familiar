@@ -14,14 +14,14 @@ TagManager:
   - Bucket
   - chest
   - Superior Bucket
-  - RSpawnpoint0
-  - RSpawnpoint1
-  - RSpawnpoint2
+  - Feather
+  - Green Berry
+  - Orange Berry
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Items
+  - 
   - Water
   - UI
   - 
