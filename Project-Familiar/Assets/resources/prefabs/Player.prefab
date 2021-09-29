@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5525445642162285284}
   - component: {fileID: 1163593784}
   - component: {fileID: 1163593785}
-  - component: {fileID: 1163593786}
   - component: {fileID: -6382932398549006202}
   - component: {fileID: -556088785104869454}
   - component: {fileID: -1885582637687195301}
@@ -127,9 +126,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3.5
   m_Dashing: 0
-  dashSpeed: 5
+  dashSpeed: 7
   dashTimer: 1.1
-  dashDuration: 1
+  dashDuration: 0.95
 --- !u!114 &5525445642162285284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,29 +176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8dbabc01c75eb4596d9a871223b88f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1163593786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5525445642162285291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1024046b8263fa74fbbc680c48fb62e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemPrefabs:
-  - {fileID: 3806321388856769145, guid: a1953d04fcd8fab40abf36d9313cd6c8, type: 3}
-  - {fileID: 2461610277182476150, guid: cd9cb45c6e5c61441ae6cda32facd6cc, type: 3}
-  - {fileID: 7477832987043847440, guid: 86ce3db32d5097e408c5f945be71e8e6, type: 3}
-  - {fileID: 955586956248223102, guid: 1fbe92ccd0d7bae4d9c60a6c4616ca67, type: 3}
-  - {fileID: 6997432424895470040, guid: 89841651444eb6f4488d33fc94d88ebd, type: 3}
-  currentItem: {fileID: 0}
-  canPickup: 0
-  canDrop: 0
-  prefabObject: {fileID: 0}
-  colliderObject: {fileID: 0}
 --- !u!114 &-6382932398549006202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,6 +225,7 @@ MonoBehaviour:
   - {fileID: 1628550812414483330, guid: e13f64251d5676244bcd6c78ba8c5135, type: 3}
   - {fileID: 5420119473665045145, guid: d3c5db5e120ffe540bf4ad0d5c676a35, type: 3}
   - {fileID: 104755957837849784, guid: 8c5adc81ce5a7a24a9ce5e49856f5745, type: 3}
+  - {fileID: 2950542744403582108, guid: 5f7a1cd508714f04386ac8db6f5c161d, type: 3}
   currentItem: {fileID: 0}
   canPickup: 0
   canDrop: 0
