@@ -13,7 +13,7 @@ public class ItemRequest : MonoBehaviour
     private int m_NumberOfItems;
     private List<GameObject> m_SpawnedItems = new List<GameObject>();
     private GameObject m_RightGameObject;
-    private bool m_Success;
+    [HideInInspector]public bool m_Success;
     private GameObject m_ObejctToDestroy;
     private bool m_Wrong;
     private int m_NumberOfSuccess;
@@ -60,8 +60,6 @@ public class ItemRequest : MonoBehaviour
             {
                 m_RightGameObject = other.gameObject;
                 m_Success = true;
-                
-                print("succ");
             }
             else
             {
