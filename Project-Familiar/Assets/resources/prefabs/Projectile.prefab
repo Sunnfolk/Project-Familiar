@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3981436905545112456}
   m_LocalRotation: {x: -0, y: -0, z: 0.79584146, w: -0.60550505}
-  m_LocalPosition: {x: -0.005, y: -0.032, z: -0.2919795}
-  m_LocalScale: {x: 0.34684888, y: 0.34684888, z: 0.34684888}
+  m_LocalPosition: {x: -0.009, y: -0.048, z: -0.3}
+  m_LocalScale: {x: 0.34684888, y: 0.34684888, z: 0}
   m_Children: []
   m_Father: {fileID: 9012636133152910690}
   m_RootOrder: 0
@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.1254902}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -600,7 +600,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 10
+    maxNumParticles: 15
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0

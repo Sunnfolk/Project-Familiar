@@ -1,4 +1,5 @@
 
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -11,6 +12,9 @@ public class PlayerController : MonoBehaviour
     public static float highScore;
     private SceneControl m_SceneControl;
     public TMP_Text scoreDisplay;
+    
+    [HideInInspector] public bool isTakingDamage;
+    [SerializeField] private float damageDuration = 1;
     private void Start()
     {
         m_Request = GameObject.Find("Cauldron").GetComponent<ItemRequest>();
@@ -32,6 +36,7 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("Projectile"))
         {
             playerHealth--;
+            StartCoroutine(isTakingDamager(damageDuration));
         }
     }
 
@@ -40,5 +45,12 @@ public class PlayerController : MonoBehaviour
         highScore = m_PlayerScore;
         m_PlayerScore = 0f;
         m_SceneControl.LoadScene("Win Menu");
+    }
+    
+    private IEnumerator isTakingDamager(float damageDuration)
+    {
+        isTakingDamage = true;
+        yield return new WaitForSeconds(damageDuration);
+        isTakingDamage = false;
     }
 }
