@@ -7,7 +7,7 @@ public class SpawnScript : MonoBehaviour
     public GameObject[] spawnItems;
     public Transform[] spawnPoints;
     [SerializeField] private float timer = 10f;
-    [SerializeField]private float m_TimerCounter;
+    private float m_TimerCounter;
 
     private void Start()
     {
@@ -34,7 +34,7 @@ public class SpawnScript : MonoBehaviour
         for (int i = 0; i < spawnItems.Length; i++)
         {
             var clone = Instantiate(spawnItems[i], spawnPoints[i].position, new Quaternion());
-            Destroy(clone, 10f);
+            Destroy(clone, timer);
         }
     }
 }

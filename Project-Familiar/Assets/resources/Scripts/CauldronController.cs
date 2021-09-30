@@ -12,9 +12,11 @@ public class CauldronController : MonoBehaviour
     private float m_Anger;
     [HideInInspector]public bool m_Switch1;
     [HideInInspector] public bool m_Switch2;
+    [HideInInspector] public bool m_Switch3;
     [SerializeField] private float minShootFq = 0.1f;
-    [SerializeField] private float Stage1ShootFqIncrease = 0.5f;
-    [SerializeField] private float Stage2ShootFqIncrease = 0.5f;
+    [SerializeField] private float Stage1ShootFqIncrease = 1f;
+    [SerializeField] private float Stage2ShootFqIncrease = 2f;
+    [SerializeField] private float Stage3ShootFqIncrease = 3f;
 
 
     void Start()
@@ -50,26 +52,28 @@ public class CauldronController : MonoBehaviour
             m_AngerMeter.meter++;
         }
 
-        if (m_AngerMeter.meter==10 && !m_Switch1)
+        if (m_AngerMeter.meter < 10 && !m_Switch3)
         {
-            if(shootFq > 0)
-            {
-                shootFq -= Stage1ShootFqIncrease;
-            }
-            
+            shootFq = Stage1ShootFqIncrease;
+            m_Switch3 = true;
+        }
+        else
+        {
+            m_Switch3 = false;
+        }
+
+        if (m_AngerMeter.meter>=10 && !m_Switch1)
+        {
+            shootFq = Stage2ShootFqIncrease;
             m_Switch1 = true;
         }
         else
         {
             m_Switch1 = false;
         }
-        if (m_AngerMeter.meter==19 && !m_Switch2)
+        if (m_AngerMeter.meter>=19 && !m_Switch2)
         {
-            if(shootFq > 0)
-            {
-                shootFq -= Stage2ShootFqIncrease;
-            }
-            
+            shootFq -= Stage3ShootFqIncrease;
             m_Switch2 = true;
         }
         else

@@ -12,11 +12,13 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float dashTimer = 1.2f; 
     private float m_DashTimerCounter;
     [SerializeField] private float dashDuration= 1;
+    private Animator m_Animator;
 
     private void Start()
     {
         m_Input = GetComponent<PlayerInput>();
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        m_Animator = GetComponent<Animator>();
         m_DashTimerCounter = dashTimer;
     }
 
@@ -65,6 +67,7 @@ public class PlayerMove : MonoBehaviour
         if (m_Input.KeyLastP == 0)
         {
             m_Rigidbody2D.AddForce(Vector2.up * dashSpeed, ForceMode2D.Impulse);
+            //m_Animator.Play("Dash");
         }
         if (m_Input.KeyLastP == 1)
         {
