@@ -11,6 +11,7 @@ public class PlayerAnimation : MonoBehaviour
     private PlayerMove m_Move;
     private Rigidbody2D m_Rigidbody;
     private PlayerController m_Controller;
+    private Health m_Health;
 
     private static readonly int Walk = Animator.StringToHash("Walk");
     
@@ -21,6 +22,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Start()
     {
+        m_Health = GameObject.Find("Health").GetComponent<Health>();
         m_Animator = GetComponent<Animator>();
         m_Input = GetComponent<PlayerInput>();
         m_Rigidbody = GetComponent<Rigidbody2D>();

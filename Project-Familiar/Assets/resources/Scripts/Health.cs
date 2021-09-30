@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     public Sprite FullHeatlhSprite;
     public Sprite TwoHeatlhSprite;
     public Sprite OneHeatlhSprite;
+    [HideInInspector] public bool IsDead;
     void Start()
     {
         m_PlayerController = GameObject.Find("Player").GetComponent<PlayerController>();
@@ -32,7 +33,7 @@ public class Health : MonoBehaviour
         }
         else
         {
-            m_PlayerController.Die();
+            IsDead = true;
         }
         
     }

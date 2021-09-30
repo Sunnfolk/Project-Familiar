@@ -15,7 +15,7 @@ public class WitchAnimation : MonoBehaviour
     
     void Update()
     {
-        if (m_CauldronController.m_Switch1 && !m_Switch1)
+        if (m_CauldronController.stage2 && !m_Switch1)
         {
             m_Animator.Play("IdleToAngry");
             m_Switch1 = true;
