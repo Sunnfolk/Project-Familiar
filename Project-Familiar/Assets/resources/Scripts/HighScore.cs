@@ -10,7 +10,7 @@ public class HighScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreDisplay.text = "High Score: "+PlayerController.highScore;
+        scoreDisplay.text = PlayerController.highScore.ToString();
     }
 
     // Update is called once per frame

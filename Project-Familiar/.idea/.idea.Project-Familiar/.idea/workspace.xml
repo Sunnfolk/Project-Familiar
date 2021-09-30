@@ -2,19 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Decorations/SHELFGOOD_ONE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Decorations/SHELFGOOD_ONE.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts/jmh-cthulhumbus-arcade.cthulhumbusarcade-regular SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts/jmh-cthulhumbus-arcade.cthulhumbusarcade-regular SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts/jmh-cthulhumbus-arcade.cthulhumbusarcade-regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts/jmh-cthulhumbus-arcade.cthulhumbusarcade-regular.otf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts/mary-jane.olyff SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts/mary-jane.olyff SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts/mary-jane.olyff.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Fonts/mary-jane.olyff.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screen-Sheet_0 1.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screen-Sheet_0 1.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screen-Sheet_0.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screen-Sheet_0.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Title.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Title.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/WinScene.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/WinScene.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Background art/Canvas.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Background art/Canvas.controller.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Win Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Win Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/Player Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/Player Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -35,17 +46,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/WitchAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/TestScipt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/TestScipt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yZyYiLI9EptIsD4YJSsNUtDl7K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
