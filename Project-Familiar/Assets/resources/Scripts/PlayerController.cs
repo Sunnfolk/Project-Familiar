@@ -12,13 +12,16 @@ public class PlayerController : MonoBehaviour
     public static float highScore;
     private SceneControl m_SceneControl;
     public TMP_Text scoreDisplay;
+    private AudioSource m_AudioSource;
+    public AudioClip Hurt;
     
     [HideInInspector] public bool isTakingDamage;
-    [SerializeField] private float damageDuration = 1;
+    [SerializeField] private float damageDuration = 0.3f;
     private void Start()
     {
         m_Request = GameObject.Find("Cauldron").GetComponent<ItemRequest>();
         m_SceneControl = GetComponent<SceneControl>();
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -29,6 +32,7 @@ public class PlayerController : MonoBehaviour
             scoreDisplay.text = "Score: "+m_PlayerScore;
             m_Request.getScore = false;
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -37,6 +41,7 @@ public class PlayerController : MonoBehaviour
         {
             playerHealth--;
             StartCoroutine(isTakingDamager(damageDuration));
+            m_AudioSource.PlayOneShot(Hurt);
         }
     }
 

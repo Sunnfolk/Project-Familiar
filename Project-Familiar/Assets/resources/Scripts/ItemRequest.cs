@@ -18,12 +18,15 @@ public class ItemRequest : MonoBehaviour
     private bool m_Wrong;
     private int m_NumberOfSuccess;
     public bool getScore;
+    private AudioSource m_AudioSource;
+    public AudioClip Plop;
 
     private void Start()
     {
         m_CauldronController = GetComponent<CauldronController>();
         m_AngerMeter = GameObject.Find("AngerMeter").GetComponent<AngerMeter>();
         SpawnRequests();
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -39,6 +42,7 @@ public class ItemRequest : MonoBehaviour
             m_Success = false;
             m_NumberOfSuccess++;
             getScore = true;
+            m_AudioSource.PlayOneShot(Plop);
         }
 
         if (m_NumberOfSuccess == 3)

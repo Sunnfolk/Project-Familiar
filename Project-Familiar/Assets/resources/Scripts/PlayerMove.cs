@@ -14,6 +14,8 @@ public class PlayerMove : MonoBehaviour
     private float m_DashTimerCounter;
     [SerializeField] private float dashDuration= 1;
     private Animator m_Animator;
+    private AudioSource m_Audio;
+    public AudioClip dash;
 
     private void Start()
     {
@@ -21,6 +23,7 @@ public class PlayerMove : MonoBehaviour
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         m_Animator = GetComponent<Animator>();
         m_DashTimerCounter = dashTimer;
+        m_Audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -47,6 +50,7 @@ public class PlayerMove : MonoBehaviour
         if (m_Input.dash && m_CanDash)
         {
             Dash();
+            m_Audio.PlayOneShot(dash);
         }
 
     }

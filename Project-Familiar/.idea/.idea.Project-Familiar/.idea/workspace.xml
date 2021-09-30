@@ -2,28 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Background music.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Background music/Andromeda Journey.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Background music/Andromeda Journey.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Background music/Magellanic Clouds.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Background music/Magellanic Clouds.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Background music/The Novis Base.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Background music/The Novis Base.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Pickup_Item.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Pickup_Item.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/WiatchAnimationScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/WiatchAnimationScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Hurt.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Hurt.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Hurt_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Hurt_2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Hurt_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Hurt_3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/PickUp_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/PickUp_4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Pickup_Item.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Pickup_Item.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Water Droplet - Sound Effect (HD) (1).mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/Sound effects/Water Droplet - Sound Effect (HD) (1).mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Audio/Pickup_Item.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Audio/Pickup_Item.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Hit/PlayerHitUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Hit/PlayerHitUp.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerHit/PlayerHitDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerHit/PlayerHitDown.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerHit/PlayerHitLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerHit/PlayerHitLeft.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerHit/PlayerHitRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerHit/PlayerHitRight.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

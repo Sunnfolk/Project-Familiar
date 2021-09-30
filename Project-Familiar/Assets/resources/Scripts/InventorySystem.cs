@@ -8,6 +8,9 @@ public class InventorySystem : MonoBehaviour
     public GameObject currentItem;
     public bool canPickup;
     public bool canDrop;
+    public AudioClip PickUp;
+    public AudioClip Drop;
+    private AudioSource m_Audiosource;
 
     private PlayerInput _input;
 
@@ -17,6 +20,7 @@ public class InventorySystem : MonoBehaviour
     private void Start()
     {
         _input = GetComponent<PlayerInput>();
+        m_Audiosource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -25,7 +29,8 @@ public class InventorySystem : MonoBehaviour
         {
             currentItem = prefabObject;
             Destroy(colliderObject);
-            
+            m_Audiosource.PlayOneShot(PickUp);
+
             prefabObject = null;
             colliderObject = null;
             canDrop = true;
@@ -35,6 +40,7 @@ public class InventorySystem : MonoBehaviour
             Instantiate(currentItem, transform.position, quaternion.identity);
             currentItem = null;
             canDrop = false;
+            m_Audiosource.PlayOneShot(Drop);
         }
     }
 

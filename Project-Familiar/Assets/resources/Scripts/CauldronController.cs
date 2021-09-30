@@ -18,6 +18,8 @@ public class CauldronController : MonoBehaviour
     [SerializeField] private float stage1ShootFq = 1f;
     [SerializeField] private float stage2ShootFq = 2f;
     [SerializeField] private float stage3ShootFq = 3f;
+    private AudioSource m_Audio;
+    public AudioClip Shoot;
 
 
     void Start()
@@ -26,6 +28,7 @@ public class CauldronController : MonoBehaviour
         m_ShootCounter = shootFq;
         m_Anger = angerIncreaseFq;
         m_Position = transform.position;
+        m_Audio = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -37,6 +40,7 @@ public class CauldronController : MonoBehaviour
         {
             m_ShootCounter = shootFq;
             ShootProjectile();
+            m_Audio.PlayOneShot(Shoot);
         }
         if (shootFq <= 0)
         {
