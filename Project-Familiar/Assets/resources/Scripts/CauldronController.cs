@@ -4,13 +4,13 @@ using UnityEngine.Serialization;
 
 public class CauldronController : MonoBehaviour
 {
-    private AngerMeter m_AngerMeter;
+    private AngerMeter m_AngerMeter; 
     public GameObject m_Projectile;
     [HideInInspector] public Vector3 m_Position;
     private float m_ShootCounter;
     [SerializeField] private float shootFq =5f;
     public float angerIncreaseFq = 2f;
-    private float m_Anger;
+    [SerializeField] private float m_Anger;
     [HideInInspector]public bool stage2;
     [HideInInspector] public bool stage3;
     [HideInInspector] public bool stage1;
