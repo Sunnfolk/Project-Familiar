@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class CauldronController : MonoBehaviour
 {
@@ -14,9 +15,9 @@ public class CauldronController : MonoBehaviour
     [HideInInspector] public bool m_Switch2;
     [HideInInspector] public bool m_Switch3;
     [SerializeField] private float minShootFq = 0.1f;
-    [SerializeField] private float Stage1ShootFqIncrease = 1f;
-    [SerializeField] private float Stage2ShootFqIncrease = 2f;
-    [SerializeField] private float Stage3ShootFqIncrease = 3f;
+    [SerializeField] private float stage1ShootFq = 1f;
+    [SerializeField] private float stage2ShootFq = 2f;
+    [SerializeField] private float stage3ShootFq = 3f;
 
 
     void Start()
@@ -54,7 +55,7 @@ public class CauldronController : MonoBehaviour
 
         if (m_AngerMeter.meter < 10 && !m_Switch3)
         {
-            shootFq = Stage1ShootFqIncrease;
+            shootFq = stage1ShootFq;
             m_Switch3 = true;
         }
         else
@@ -64,7 +65,7 @@ public class CauldronController : MonoBehaviour
 
         if (m_AngerMeter.meter>=10 && !m_Switch1)
         {
-            shootFq = Stage2ShootFqIncrease;
+            shootFq = stage2ShootFq;
             m_Switch1 = true;
         }
         else
@@ -73,7 +74,7 @@ public class CauldronController : MonoBehaviour
         }
         if (m_AngerMeter.meter>=19 && !m_Switch2)
         {
-            shootFq -= Stage3ShootFqIncrease;
+            shootFq -= stage3ShootFq;
             m_Switch2 = true;
         }
         else

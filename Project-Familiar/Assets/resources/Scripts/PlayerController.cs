@@ -1,13 +1,16 @@
-using System;
+
+using TMPro;
 using UnityEngine;
+
 
 public class PlayerController : MonoBehaviour
 {
     private ItemRequest m_Request;
     public float playerHealth = 3;
     private float m_PlayerScore;
-    public float highScore;
+    [SerializeField] public float highScore;
     private SceneControl m_SceneControl;
+    public TMP_Text scoreDisplay;
     private void Start()
     {
         m_Request = GameObject.Find("Cauldron").GetComponent<ItemRequest>();
@@ -16,10 +19,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (m_Request.m_Success)
+        if (m_Request.getScore)
         {
             m_PlayerScore++;
-            print(m_PlayerScore);
+            scoreDisplay.text = "Score: "+m_PlayerScore.ToString();
+            print("yup"+m_PlayerScore);
+            m_Request.getScore = false;
         }
     }
 
@@ -34,7 +39,7 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         highScore = m_PlayerScore;
-        m_PlayerScore = 0f;
-        m_SceneControl.LoadScene("Win Menu");
+        //m_PlayerScore = 0f;
+        //m_SceneControl.LoadScene("Win Menu");
     }
 }
