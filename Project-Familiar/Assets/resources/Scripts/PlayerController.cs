@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private ItemRequest m_Request;
     public float playerHealth = 3;
     private float m_PlayerScore;
-    [SerializeField] public float highScore;
+    public static float highScore;
     private SceneControl m_SceneControl;
     public TMP_Text scoreDisplay;
     private void Start()
@@ -22,8 +22,7 @@ public class PlayerController : MonoBehaviour
         if (m_Request.getScore)
         {
             m_PlayerScore++;
-            scoreDisplay.text = "Score: "+m_PlayerScore.ToString();
-            print("yup"+m_PlayerScore);
+            scoreDisplay.text = "Score: "+m_PlayerScore;
             m_Request.getScore = false;
         }
     }
@@ -39,7 +38,7 @@ public class PlayerController : MonoBehaviour
     public void Die()
     {
         highScore = m_PlayerScore;
-        //m_PlayerScore = 0f;
-        //m_SceneControl.LoadScene("Win Menu");
+        m_PlayerScore = 0f;
+        m_SceneControl.LoadScene("Win Menu");
     }
 }
