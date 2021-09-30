@@ -6,16 +6,9 @@ using UnityEngine;
 public class HighScore : MonoBehaviour
 {
     public TMP_Text scoreDisplay;
-    
-    // Start is called before the first frame update
+
     void Start()
     {
         scoreDisplay.text = PlayerController.highScore.ToString();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
