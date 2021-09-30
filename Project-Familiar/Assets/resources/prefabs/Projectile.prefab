@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3981436905545112456}
   m_LocalRotation: {x: -0, y: -0, z: 0.79584146, w: -0.60550505}
-  m_LocalPosition: {x: -0.009, y: -0.075, z: -0.2919795}
+  m_LocalPosition: {x: -0.005, y: -0.032, z: -0.2919795}
   m_LocalScale: {x: 0.34684888, y: 0.34684888, z: 0.34684888}
   m_Children: []
   m_Father: {fileID: 9012636133152910690}
@@ -168,7 +168,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4835,8 +4835,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9012636133152910703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.71, y: -0.07, z: 0}
-  m_LocalScale: {x: 2.8831, y: 2.8831, z: 2.8831}
+  m_LocalPosition: {x: 1.4481, y: -0.3319, z: 0}
+  m_LocalScale: {x: 2.1923144, y: 2.1923144, z: 2.1923144}
   m_Children:
   - {fileID: 161927714138293941}
   m_Father: {fileID: 0}
@@ -4946,7 +4946,7 @@ MonoBehaviour:
   m_Speed: 3
   m_MinAngleRange: 270
   m_MaxAngleRange: 90
-  m_Lifetime: 3
+  m_Lifetime: 5
 --- !u!95 &4872764980777018492
 Animator:
   serializedVersion: 3
