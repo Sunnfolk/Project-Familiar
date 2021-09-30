@@ -15,8 +15,8 @@ public class CauldronController : MonoBehaviour
     [SerializeField] private float minShootFq = 0.1f;
     [SerializeField] private float Stage1ShootFqIncrease = 0.5f;
     [SerializeField] private float Stage2ShootFqIncrease = 0.5f;
-    
-    
+
+
     void Start()
     {
         m_AngerMeter = GameObject.Find("AngerMeter").GetComponent<AngerMeter>();
