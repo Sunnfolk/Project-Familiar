@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Win Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Win Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +90,7 @@
       <workItem from="1632908588286" duration="19660000" />
       <workItem from="1632990017405" duration="2796000" />
       <workItem from="1632993168051" duration="600000" />
-      <workItem from="1633002415197" duration="1924000" />
+      <workItem from="1633002415197" duration="5015000" />
     </task>
     <servers />
   </component>
