@@ -11,9 +11,9 @@ public class CauldronController : MonoBehaviour
     [SerializeField] private float shootFq =5f;
     public float angerIncreaseFq = 2f;
     private float m_Anger;
-    [HideInInspector]public bool m_Switch1;
-    [HideInInspector] public bool m_Switch2;
-    [HideInInspector] public bool m_Switch3;
+    [HideInInspector]public bool stage2;
+    [HideInInspector] public bool stage3;
+    [HideInInspector] public bool stage1;
     [SerializeField] private float minShootFq = 0.1f;
     [SerializeField] private float stage1ShootFq = 1f;
     [SerializeField] private float stage2ShootFq = 2f;
@@ -53,33 +53,33 @@ public class CauldronController : MonoBehaviour
             m_AngerMeter.meter++;
         }
 
-        if (m_AngerMeter.meter < 10 && !m_Switch3)
+        if (m_AngerMeter.meter < 10 && !stage1)
         {
             shootFq = stage1ShootFq;
-            m_Switch3 = true;
+            stage1 = true;
         }
         else
         {
-            m_Switch3 = false;
+            stage1 = false;
         }
 
-        if (m_AngerMeter.meter>=10 && !m_Switch1)
+        if (m_AngerMeter.meter>=10 && !stage2)
         {
             shootFq = stage2ShootFq;
-            m_Switch1 = true;
+            stage2 = true;
         }
         else
         {
-            m_Switch1 = false;
+            stage2 = false;
         }
-        if (m_AngerMeter.meter>=19 && !m_Switch2)
+        if (m_AngerMeter.meter>=19 && !stage3)
         {
             shootFq -= stage3ShootFq;
-            m_Switch2 = true;
+            stage3 = true;
         }
         else
         {
-            m_Switch2 = false;
+            stage3 = false;
         }
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
