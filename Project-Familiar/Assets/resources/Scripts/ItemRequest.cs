@@ -17,6 +17,7 @@ public class ItemRequest : MonoBehaviour
     private GameObject m_ObejctToDestroy;
     private bool m_Wrong;
     private int m_NumberOfSuccess;
+    public bool getScore;
 
     private void Start()
     {
@@ -37,6 +38,7 @@ public class ItemRequest : MonoBehaviour
             Destroy(m_RightGameObject);
             m_Success = false;
             m_NumberOfSuccess++;
+            getScore = true;
         }
 
         if (m_NumberOfSuccess == 3)
