@@ -14,6 +14,10 @@ public class AngerMeter : MonoBehaviour
     
     void Update()
     {
+        if (meter <= 0)
+        {
+            meter = 1f;
+        }
         SpriteRenderer.sprite = Resources.Load<Sprite>("sprites/AngerMeter/"+ meter);
         if (meter == 19)
         {
