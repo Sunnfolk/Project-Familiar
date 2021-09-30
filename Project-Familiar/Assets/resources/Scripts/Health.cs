@@ -18,21 +18,21 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        if (m_PlayerController.m_PlayerHealth == 3f)
+        if (m_PlayerController.playerHealth == 3f)
         {
             SpriteRenderer.sprite = FullHeatlhSprite;
         }
-        else if (m_PlayerController.m_PlayerHealth == 2f)
+        else if (m_PlayerController.playerHealth == 2f)
         {
             SpriteRenderer.sprite = TwoHeatlhSprite;
         }
-        else if (m_PlayerController.m_PlayerHealth == 1f)
+        else if (m_PlayerController.playerHealth == 1f)
         {
             SpriteRenderer.sprite = OneHeatlhSprite;
         }
         else
         {
-            print("dead");
+            m_PlayerController.Die();
         }
         
     }

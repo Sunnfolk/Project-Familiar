@@ -18,7 +18,8 @@ GameObject:
   - component: {fileID: -6382932398549006202}
   - component: {fileID: -556088785104869454}
   - component: {fileID: -1885582637687195301}
-  m_Layer: 0
+  - component: {fileID: 7788121945302420384}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -188,7 +189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09fc1241986c58478573e01dc1b7bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlayerHealth: 3
+  playerHealth: 3
+  highScore: 0
 --- !u!70 &-556088785104869454
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -232,3 +234,15 @@ MonoBehaviour:
   canDrop: 0
   prefabObject: {fileID: 0}
   colliderObject: {fileID: 0}
+--- !u!114 &7788121945302420384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5525445642162285291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08b95e951f4b7948af9cda061e12282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
