@@ -78,7 +78,7 @@ public class CauldronController : MonoBehaviour
         }
         if (m_AngerMeter.meter>=19 && !stage3)
         {
-            shootFq -= stage3ShootFq;
+            shootFq = stage3ShootFq;
             stage3 = true;
         }
         else

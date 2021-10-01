@@ -27,5 +27,10 @@ public class AngerMeter : MonoBehaviour
         {
             AngerStop = false;
         }
+
+        if (meter > 19)
+        {
+            meter = 19;
+        }
     }
 }

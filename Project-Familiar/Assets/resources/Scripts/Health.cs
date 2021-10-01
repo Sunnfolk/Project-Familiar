@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
         }
         else
         {
-            IsDead = true;
+            m_PlayerController.Die();
         }
         
     }
