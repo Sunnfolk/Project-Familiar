@@ -5,13 +5,12 @@ using UnityEngine;
 public class WiatchAnimationScript : MonoBehaviour
 {
     private Animator m_Animator;
-    private CauldronController m_Cauldron;
+    public CauldronController m_Cauldron;
     
     // Start is called before the first frame update
     void Start()
     {
         m_Animator = GetComponent<Animator>();
-        m_Cauldron = GetComponent<CauldronController>();
     }
 
     // Update is called once per frame
