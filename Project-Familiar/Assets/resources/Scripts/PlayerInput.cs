@@ -18,8 +18,8 @@ public class PlayerInput : MonoBehaviour
         moveVector.x = (Keyboard.current.aKey.isPressed ? -1f : 0f) + (Keyboard.current.dKey.isPressed ? 1f : 0f);
         moveVector.y = (Keyboard.current.sKey.isPressed ? -1f : 0f) + (Keyboard.current.wKey.isPressed ? 1f : 0f);
 
-        dash = Keyboard.current.shiftKey.wasPressedThisFrame;
-        interact = Keyboard.current.fKey.wasPressedThisFrame;
+        dash = Keyboard.current.spaceKey.wasPressedThisFrame;
+        interact = Mouse.current.leftButton.wasPressedThisFrame;
         LastInputCheck();
     }
 
