@@ -62,7 +62,7 @@ public class CauldronController : MonoBehaviour
             shootFq = stage1ShootFq;
             stage1 = true;
         }
-        else
+        else 
         {
             stage1 = false;
         }

@@ -25,13 +25,6 @@ public class ProjectileProperties : MonoBehaviour
   
     void Update()
     {
-        
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            //transform.Rotate(0, 0, Random.Range(m_MinAngleRange, m_MaxAngleRange));
-            //transform.position = m_CauldronController.m_Position;
-            Destroy(gameObject);
-        }
         transform.Translate(Vector2.up * m_Speed * Time.deltaTime);
     }
 }
