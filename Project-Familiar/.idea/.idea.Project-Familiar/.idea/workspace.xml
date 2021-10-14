@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Ulrik Test scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Ulrik Test scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/NewAudioMixer.mixer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Audio/NewAudioMixer.mixer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/AudioMaster.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/AudioMaster.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Background art/grass_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Background art/grass_15.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Cauldron.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Cauldron.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,15 +38,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/TestScipt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AudioMaster.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yZyYiLI9EptIsD4YJSsNUtDl7K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -103,6 +117,8 @@
       <workItem from="1633027174342" duration="1000" />
       <workItem from="1633074198709" duration="75000" />
       <workItem from="1633074295302" duration="1109000" />
+      <workItem from="1634134543384" duration="727000" />
+      <workItem from="1634200548833" duration="1471000" />
     </task>
     <servers />
   </component>
