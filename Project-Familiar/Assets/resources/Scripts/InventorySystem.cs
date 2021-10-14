@@ -1,6 +1,7 @@
 using System;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class InventorySystem : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class InventorySystem : MonoBehaviour
     private PlayerInput _input;
 
    [SerializeField] private GameObject prefabObject;
-    [SerializeField] private GameObject colliderObject;
+   [SerializeField] private GameObject colliderObject;
+   [SerializeField] private float itemDespawnTimer= 5f;
 
     private void Start()
     {
@@ -37,7 +39,8 @@ public class InventorySystem : MonoBehaviour
         }
         else if (_input.interact && canDrop)
         {
-            Instantiate(currentItem, transform.position, quaternion.identity);
+            var clone = Instantiate(currentItem, transform.position, quaternion.identity);
+            Destroy(clone,itemDespawnTimer);
             currentItem = null;
             canDrop = false;
             m_Audiosource.PlayOneShot(Drop);
