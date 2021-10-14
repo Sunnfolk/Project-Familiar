@@ -8,7 +8,7 @@ public class CauldronController : MonoBehaviour
     public GameObject m_Projectile;
     [HideInInspector] public Vector3 m_Position;
     private float m_ShootCounter;
-    [SerializeField] private float shootFq =5f;
+    private float m_ShootFq =5f;
     public float angerIncreaseFq = 2f;
     [SerializeField] private float m_Anger;
     [HideInInspector]public bool stage2;
@@ -25,7 +25,7 @@ public class CauldronController : MonoBehaviour
     void Start()
     {
         m_AngerMeter = GameObject.Find("AngerMeter").GetComponent<AngerMeter>();
-        m_ShootCounter = shootFq;
+        m_ShootCounter = m_ShootFq;
         m_Anger = angerIncreaseFq;
         m_Position = transform.position;
         m_Audio = GetComponent<AudioSource>();
@@ -38,13 +38,13 @@ public class CauldronController : MonoBehaviour
         }
         if (m_ShootCounter <= 0)
         {
-            m_ShootCounter = shootFq;
+            m_ShootCounter = m_ShootFq;
             ShootProjectile();
             m_Audio.PlayOneShot(Shoot);
         }
-        if (shootFq <= 0)
+        if (m_ShootFq <= 0)
         {
-            shootFq = minShootFq;
+            m_ShootFq = minShootFq;
         }
         AngerMeter();
        
@@ -70,7 +70,7 @@ public class CauldronController : MonoBehaviour
 
         if (m_AngerMeter.meter < 10 && !stage1)
         {
-            shootFq = stage1ShootFq;
+            m_ShootFq = stage1ShootFq;
             stage1 = true;
         }
         else 
@@ -80,7 +80,7 @@ public class CauldronController : MonoBehaviour
 
         if (m_AngerMeter.meter>=10 && !stage2)
         {
-            shootFq = stage2ShootFq;
+            m_ShootFq = stage2ShootFq;
             stage2 = true;
         }
         else
@@ -89,7 +89,7 @@ public class CauldronController : MonoBehaviour
         }
         if (m_AngerMeter.meter>=19 && !stage3)
         {
-            shootFq = stage3ShootFq;
+            m_ShootFq = stage3ShootFq;
             stage3 = true;
         }
         else
