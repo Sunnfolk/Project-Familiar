@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class AngerMeter : MonoBehaviour
 {
     private SpriteRenderer SpriteRenderer;
     public float meter = 1f;
-    public bool AngerStop;
+    [HideInInspector] public bool angerStop;
     void Start()
     {
         
@@ -19,18 +20,14 @@ public class AngerMeter : MonoBehaviour
             meter = 1f;
         }
         SpriteRenderer.sprite = Resources.Load<Sprite>("sprites/AngerMeter/"+ meter);
-        if (meter == 19)
+        if (meter >= 19)
         {
-            AngerStop = true;
+            meter = 19;
+            angerStop = true;
         }
         else
         {
-            AngerStop = false;
-        }
-
-        if (meter > 19)
-        {
-            meter = 19;
+            angerStop = false;
         }
     }
 }

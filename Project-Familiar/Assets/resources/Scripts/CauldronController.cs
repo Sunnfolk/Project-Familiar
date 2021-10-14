@@ -46,7 +46,18 @@ public class CauldronController : MonoBehaviour
         {
             shootFq = minShootFq;
         }
-        if (m_Anger > 0 && !m_AngerMeter.AngerStop)
+        AngerMeter();
+       
+    }
+    private void ShootProjectile ()
+    {
+        Instantiate(m_Projectile,m_Position, new Quaternion());
+    }
+
+    private void AngerMeter()
+    {
+        if (m_AngerMeter.angerStop) return;
+        if (m_Anger > 0)
         {
             m_Anger -= Time.deltaTime;
         }
@@ -85,13 +96,5 @@ public class CauldronController : MonoBehaviour
         {
             stage3 = false;
         }
-        if (Keyboard.current.eKey.wasPressedThisFrame)
-        {
-            ShootProjectile();
-        }
-    }
-    private void ShootProjectile ()
-    {
-        Instantiate(m_Projectile,m_Position, new Quaternion());
     }
 }
