@@ -4944,8 +4944,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Speed: 3
-  m_MinAngleRange: 270
-  m_MaxAngleRange: 90
+  m_MinAngleRange: 20
+  m_MaxAngleRange: 340
   m_Lifetime: 5
 --- !u!95 &4872764980777018492
 Animator:
