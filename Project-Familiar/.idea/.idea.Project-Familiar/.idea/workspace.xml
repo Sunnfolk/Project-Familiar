@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Apple for bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Apple for bubble.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Apple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Apple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Berry For bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Berry For bubble.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Books.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Books.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Bucket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Bucket.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Capsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Capsule.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Cauldron.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Cauldron.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Feather.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Feather.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Green Berry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Green Berry.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Health.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Health.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Orange Berry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Orange Berry.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Potion for bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Potion for bubble.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Potion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Potion.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Tentacle for bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Tentacle for bubble.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Tentacle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Tentacle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/Worm.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Worm.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/book for bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/book for bubble.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/bucket for bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/bucket for bubble.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/feather for bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/feather for bubble.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/prefabs/wyrm for bubble.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/prefabs/wyrm for bubble.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
