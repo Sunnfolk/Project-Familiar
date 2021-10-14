@@ -1,13 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
+    private PauseMenu m_PauseMenu;
+
+    private void Start()
+    {
+        m_PauseMenu = GetComponent<PauseMenu>();
+    }
+
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
+        m_PauseMenu.Resume();
     }
 
  public void QuitGame()
