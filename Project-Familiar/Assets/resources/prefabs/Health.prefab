@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99,3 +99,4 @@ MonoBehaviour:
   FullHeatlhSprite: {fileID: 21300000, guid: 281a648ce26cc3b40a3823aa4b96ed52, type: 3}
   TwoHeatlhSprite: {fileID: 21300000, guid: 5bc2663d576cd40489a675156f353d1e, type: 3}
   OneHeatlhSprite: {fileID: 21300000, guid: 9b7b5646684d46f41831b9409b692038, type: 3}
+  IsDead: 0
