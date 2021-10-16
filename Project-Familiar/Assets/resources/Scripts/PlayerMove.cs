@@ -7,8 +7,8 @@ public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float puddleSpeed = 3f;
-    public bool m_Puddle;
-    [HideInInspector]public bool m_Dashing;
+    [HideInInspector] public bool m_Puddle;
+    [HideInInspector] public bool m_Dashing;
     private bool m_CanDash = true;
     private bool m_StartTimer;
     private PlayerInput m_Input;
@@ -21,6 +21,8 @@ public class PlayerMove : MonoBehaviour
     private AudioSource m_Audio;
     public AudioClip dash;
     private GameObject Puddle;
+    [SerializeField] AudioClip InWater;
+    [SerializeField] private AudioClip OutWater;
 
     private void Start()
     {
@@ -103,20 +105,23 @@ public class PlayerMove : MonoBehaviour
         m_CanDash = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D Puddle)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Puddle.gameObject.CompareTag("puddle"))
+        if (other.gameObject.CompareTag("puddle"))
         {
             m_Puddle = true;
+            m_Audio.PlayOneShot(InWater);
+            
         }
         
     }
 
-    private void OnTriggerExit2D(Collider2D Puddle)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (Puddle.gameObject.CompareTag("puddle"))
+        if (other.gameObject.CompareTag("puddle"))
         {
             m_Puddle = false;
+            m_Audio.PlayOneShot(OutWater);
         }
 
     }

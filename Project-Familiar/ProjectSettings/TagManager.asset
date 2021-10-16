@@ -18,6 +18,8 @@ TagManager:
   - Green Berry
   - Orange Berry
   - Worm
+  - Lake
+  - puddle
   layers:
   - Default
   - TransparentFX
