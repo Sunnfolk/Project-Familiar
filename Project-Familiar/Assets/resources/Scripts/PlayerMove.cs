@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float puddleSpeed = 3f;
+    public bool m_Puddle;
     [HideInInspector]public bool m_Dashing;
     private bool m_CanDash = true;
     private bool m_StartTimer;
@@ -16,6 +20,7 @@ public class PlayerMove : MonoBehaviour
     private Animator m_Animator;
     private AudioSource m_Audio;
     public AudioClip dash;
+    private GameObject Puddle;
 
     private void Start()
     {
@@ -24,6 +29,7 @@ public class PlayerMove : MonoBehaviour
         m_Animator = GetComponent<Animator>();
         m_DashTimerCounter = dashTimer;
         m_Audio = GetComponent<AudioSource>();
+        m_Puddle = false;
     }
 
     private void Update()
@@ -57,11 +63,19 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!m_Dashing)
+        
+        if (m_Puddle && !m_Dashing)
+        {
+            m_Rigidbody2D.velocity =
+                Vector2.ClampMagnitude(
+                    new Vector2(m_Input.moveVector.x * puddleSpeed, m_Input.moveVector.y * puddleSpeed), puddleSpeed);
+        }
+        else if (!m_Dashing)
         {
             m_Rigidbody2D.velocity =
                 Vector2.ClampMagnitude(new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed), moveSpeed);
         }
+        
     }
 
     private void Dash()
@@ -87,5 +101,23 @@ public class PlayerMove : MonoBehaviour
             m_Rigidbody2D.AddForce(Vector2.right * dashSpeed, ForceMode2D.Impulse);
         }
         m_CanDash = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D Puddle)
+    {
+        if (Puddle.gameObject.CompareTag("puddle"))
+        {
+            m_Puddle = true;
+        }
+        
+    }
+
+    private void OnTriggerExit2D(Collider2D Puddle)
+    {
+        if (Puddle.gameObject.CompareTag("puddle"))
+        {
+            m_Puddle = false;
+        }
+
     }
 }
