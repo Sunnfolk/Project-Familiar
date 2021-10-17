@@ -20,6 +20,7 @@ TagManager:
   - Worm
   - Lake
   - puddle
+  - Grumpkin
   layers:
   - Default
   - TransparentFX

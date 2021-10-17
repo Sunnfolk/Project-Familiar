@@ -20,6 +20,7 @@ public class PlayerInput : MonoBehaviour
 
         dash = Keyboard.current.spaceKey.wasPressedThisFrame;
         interact = Mouse.current.leftButton.wasPressedThisFrame;
+        
         LastInputCheck();
     }
 

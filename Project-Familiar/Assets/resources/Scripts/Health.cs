@@ -5,6 +5,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     private PlayerController m_PlayerController;
+
+    public PlayerAnimation m_PlayerAnim;
     //public GameObject m_Player;
     private SpriteRenderer SpriteRenderer;
     public Sprite FullHeatlhSprite;
@@ -22,18 +24,21 @@ public class Health : MonoBehaviour
         if (m_PlayerController.playerHealth == 3f)
         {
             SpriteRenderer.sprite = FullHeatlhSprite;
+            IsDead = false;
         }
         else if (m_PlayerController.playerHealth == 2f)
         {
             SpriteRenderer.sprite = TwoHeatlhSprite;
+            IsDead = false;
         }
         else if (m_PlayerController.playerHealth == 1f)
         {
             SpriteRenderer.sprite = OneHeatlhSprite;
+            IsDead = false;
         }
         else
         {
-            m_PlayerController.Die();
+            IsDead = true;
         }
         
     }
