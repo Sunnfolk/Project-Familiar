@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
@@ -18,8 +20,12 @@ public class CauldronController : MonoBehaviour
     [SerializeField] private float stage1ShootFq = 1f;
     [SerializeField] private float stage2ShootFq = 2f;
     [SerializeField] private float stage3ShootFq = 3f;
+    public float minAngleRange;
+    public float maxAngleRange;
+    public float angle;
     private AudioSource m_Audio;
     public AudioClip Shoot;
+    public ProjectileForeshadowing Foreshadowing;
 
 
     void Start()
@@ -51,7 +57,15 @@ public class CauldronController : MonoBehaviour
     }
     private void ShootProjectile ()
     {
-        Instantiate(m_Projectile,m_Position, new Quaternion());
+        angle = Random.Range(minAngleRange, maxAngleRange);
+        Foreshadowing.Foreshadow(angle);
+        StartCoroutine(nameof(Timer));
+    }
+
+    private IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(0.2f);
+        Instantiate(m_Projectile,m_Position, Quaternion.Euler(0,0,angle));
     }
 
     private void AngerMeter()
