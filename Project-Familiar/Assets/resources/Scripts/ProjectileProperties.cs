@@ -1,16 +1,14 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class ProjectileProperties : MonoBehaviour
 {
-    [SerializeField] private float m_Speed= 1f;
-    public float m_MinAngleRange;
-    public float m_MaxAngleRange;
-    [SerializeField] private float m_Lifetime = 1f;
+    [SerializeField] private float speed= 1f;
+    [SerializeField] private float lifetime = 1f;
+
     void Start()
     {
-        transform.Rotate(0, 0, Random.Range(m_MinAngleRange, m_MaxAngleRange));
-        Destroy(gameObject,m_Lifetime);
+        Destroy(gameObject,lifetime);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,6 +20,6 @@ public class ProjectileProperties : MonoBehaviour
   
     void Update()
     {
-        transform.Translate(Vector2.up * m_Speed * Time.deltaTime);
+        transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
 }
