@@ -1,91 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/GrumpkinAnimations.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/GrumpkinAnimations.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/Grumpkin.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/Grumpkin.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinIdle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinIdle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinIdle2.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinIdle2.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinItem.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinItem.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinScared.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinScared.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinSus.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinSus.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Swimming Idle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Swimming Idle/SwimIdleUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Swimming Idle/SwimIdleUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove/SwimMoveDown.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove/SwimMoveDown.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove/SwimMoveLeft.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove/SwimMoveLeft.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove/SwimMoveRight.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove/SwimMoveRight.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove/SwimMoveUp.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/SwimmingMove/SwimMoveUp.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Grumpkin for bubble.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Grumpkin for bubble.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Grumpkin.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/Grumpkin.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Items/Grumpkin.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Items/Grumpkin/GrumpkinIdle-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Items/Grumpkin/GrumpkinIdle-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Items/Grumpkin/Uuæ Grumpkin-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Items/Grumpkin/Uuæ Grumpkin-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/SwimIdleDown.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/SwimIdleDown.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/SwimIdleLeft.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/SwimIdleLeft.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/SwimIdleRight.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/SwimIdleRight.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/Swimming idle mocup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/Swimming idle mocup.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/pinkowIIdleWaterBack-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/pinkowIIdleWaterBack-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/pinkowIIdleWaterFront-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/pinkowIIdleWaterFront-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/pinkowlIdleWaterSide-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/pinkowlIdleWaterSide-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/pinkowlIdleWaterSide2-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimIdle/pinkowlIdleWaterSide2-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove/pinkowlWalkWaterBACK-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove/pinkowlWalkWaterBACK-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove/pinkowlWalkWaterFront-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove/pinkowlWalkWaterFront-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove/pinkowlWalkWaterSide-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove/pinkowlWalkWaterSide-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove/pinkowlWalkWaterSide2-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/SwimMove/pinkowlWalkWaterSide2-Sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAudioMixer.mixer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Win Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Win Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Audio/NewAudioMixer.mixer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Audio/NewAudioMixer.mixer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/Player Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/Idol/Player Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerDeath/PlayerDeathDown.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerDeath/PlayerDeathDown.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerDeath/PlayerDeathLeft.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerDeath/PlayerDeathLeft.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerDeath/PlayerDeathRight.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerDeath/PlayerDeathRight.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerDeath/PlayerDeathUp.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/sprites/Player/PlayerDeath/PlayerDeathUp.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,20 +19,19 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Core/Unity/Singleton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.6/Editor/Extensions/TrackExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/TestScipt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/HighScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/GrumpkinAnimations.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Core/Unity/Singleton.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/ProjectileProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AngerMeter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/TestScipt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/InventorySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/AudioMaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/resources/Scripts/PlayerAnimation.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yZyYiLI9EptIsD4YJSsNUtDl7K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -190,6 +105,7 @@
       <workItem from="1634200548833" duration="1717000" />
       <workItem from="1634300414549" duration="5954000" />
       <workItem from="1634425046517" duration="14285000" />
+      <workItem from="1634546763992" duration="578000" />
     </task>
     <servers />
   </component>
