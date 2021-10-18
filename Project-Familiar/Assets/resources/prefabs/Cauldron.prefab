@@ -241,20 +241,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Projectile: {fileID: 9012636133152910703, guid: 4bfa7ee8b6a6d5b4c9f69a5e0c4018bf, type: 3}
   m_Position: {x: 0, y: 0, z: 0}
-  angerIncreaseFq: 0.8
+  angerIncreaseFq: 0.75
   m_Anger: 1
   stage2: 0
   stage3: 0
   stage1: 0
   minShootFq: 0
-  stage1ShootFq: 3
-  stage2ShootFq: 1
+  stage1ShootFq: 2
+  stage2ShootFq: 0.8
   stage3ShootFq: 0.3
   minAngleRange: 20
   maxAngleRange: 340
   angle: 0
   Shoot: {fileID: 8300000, guid: 0b991a1275ce8ed478ef9b06fcb060d3, type: 3}
   Foreshadowing: {fileID: 5181843362143196355}
+  foreshadowDelay: 0.2
+  Health: {fileID: 0}
 --- !u!61 &302232580
 BoxCollider2D:
   m_ObjectHideFlags: 0

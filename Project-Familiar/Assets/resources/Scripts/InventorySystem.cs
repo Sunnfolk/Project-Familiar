@@ -18,6 +18,7 @@ public class InventorySystem : MonoBehaviour
    [SerializeField] private GameObject prefabObject;
    [SerializeField] private GameObject colliderObject;
    [SerializeField] private float itemDespawnTimer= 5f;
+   public Health Health;
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class InventorySystem : MonoBehaviour
 
     private void Update()
     {
+        if (Health.IsDead) return;
         if (_input.interact && canPickup && currentItem == null)
         {
             currentItem = prefabObject;

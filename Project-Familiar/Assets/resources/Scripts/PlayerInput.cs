@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -10,10 +9,16 @@ public class PlayerInput : MonoBehaviour
     [HideInInspector] public bool dash;
     [HideInInspector] public bool interact;
     [HideInInspector] public float KeyLastP;
+    public Health Health;
 
     void Update()
     {
-        if (PauseMenu.GameIsPaused) return;
+        if (Health.IsDead)
+        {
+            moveVector.x = 0f;
+            moveVector.y = 0f;
+        }
+        if (PauseMenu.GameIsPaused || Health.IsDead) return;
         
         moveVector.x = (Keyboard.current.aKey.isPressed ? -1f : 0f) + (Keyboard.current.dKey.isPressed ? 1f : 0f);
         moveVector.y = (Keyboard.current.sKey.isPressed ? -1f : 0f) + (Keyboard.current.wKey.isPressed ? 1f : 0f);

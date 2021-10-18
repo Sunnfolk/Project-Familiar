@@ -27,6 +27,7 @@ public class CauldronController : MonoBehaviour
     public AudioClip Shoot;
     public ProjectileForeshadowing Foreshadowing;
     [SerializeField] private float foreshadowDelay = 0.2f;
+    public Health Health;
 
 
     void Start()
@@ -39,6 +40,7 @@ public class CauldronController : MonoBehaviour
     }
     void Update()
     {
+        if (Health.IsDead) return;
         if (m_ShootCounter > 0)
         {
             m_ShootCounter -= Time.deltaTime;
