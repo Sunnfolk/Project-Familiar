@@ -23,7 +23,7 @@ public class PlayerMove : MonoBehaviour
     private GameObject Puddle;
     [SerializeField] AudioClip InWater;
     [SerializeField] private AudioClip OutWater;
-    [HideInInspector] public bool pumpkin;
+    private GrumpkinAnimations m_Grump;
 
     private void Start()
     {
@@ -125,21 +125,5 @@ public class PlayerMove : MonoBehaviour
             m_Audio.PlayOneShot(OutWater);
         }
 
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Grumpkin"))
-        {
-            pumpkin = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Grumpkin"))
-        {
-            pumpkin = false;
-        }
     }
 }

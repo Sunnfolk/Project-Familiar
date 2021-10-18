@@ -69,7 +69,7 @@ MonoBehaviour:
   - {x: 0.02480209, y: -0.2639802, z: 0.00000001258384}
   m_ShapePathHash: -1535720289
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1268
+  m_InstanceId: 37302
 --- !u!1 &5525445642162285291
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,11 +199,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3.2
+  puddleSpeed: 3
+  m_Puddle: 0
   m_Dashing: 0
   dashSpeed: 9
   dashTimer: 1.1
   dashDuration: 0.95
   dash: {fileID: 8300000, guid: e4c4caedb01d4a44aa9b6182d0fba2fb, type: 3}
+  InWater: {fileID: 0}
+  OutWater: {fileID: 0}
+  pumpkin: 0
 --- !u!114 &5525445642162285284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +271,7 @@ MonoBehaviour:
   playerHealth: 3
   scoreDisplay: {fileID: 0}
   Hurt: {fileID: 8300000, guid: 32ea111f5f488904f8fa868033556608, type: 3}
+  m_Animation: {fileID: 0}
   isTakingDamage: 0
   damageDuration: 0.3
 --- !u!70 &-556088785104869454

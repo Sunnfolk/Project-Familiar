@@ -122,7 +122,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.14841901}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.83
 --- !u!50 &3758226298053616812
 Rigidbody2D:
   serializedVersion: 4
@@ -151,11 +151,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7799780364002919713}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f00706d71d3a93c408837486d4ca40cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerClose: 0
+  target: 0
 --- !u!1 &7835768809959316006
 GameObject:
   m_ObjectHideFlags: 0

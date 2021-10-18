@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class GrumpkinAnimations : MonoBehaviour
 {
-    private bool playerClose;
+    public bool playerClose;
     private bool sus;
+    public bool target;
     private Animator m_Animator;
     private PlayerMove m_Move;
 
@@ -19,13 +20,28 @@ public class GrumpkinAnimations : MonoBehaviour
 
     void Update()
     {
-        if (m_Move.pumpkin)
+        if (playerClose)
         {
             m_Animator.Play("GrumpkinScared");
+        }
+
+        else if (target)
+        {
+            m_Animator.Play("GrumpConcerned");
         }
         else
         {
             m_Animator.Play("GrumpkinIdle");
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        playerClose = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        playerClose = false;
     }
 }
