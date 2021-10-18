@@ -26,7 +26,7 @@ public class CauldronController : MonoBehaviour
     private AudioSource m_Audio;
     public AudioClip Shoot;
     public ProjectileForeshadowing Foreshadowing;
-    [SerializeField] private float ForeShadowTimer = 0.2f;
+    [SerializeField] private float foreshadowDelay = 0.2f;
 
 
     void Start()
@@ -65,7 +65,7 @@ public class CauldronController : MonoBehaviour
 
     private IEnumerator Timer()
     {
-        yield return new WaitForSeconds(ForeShadowTimer);
+        yield return new WaitForSeconds(foreshadowDelay);
         Instantiate(m_Projectile,m_Position, Quaternion.Euler(0,0,angle));
     }
 
