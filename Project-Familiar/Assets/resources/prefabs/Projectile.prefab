@@ -4945,10 +4945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  minAngleRange: 20
-  maxAngleRange: 340
-  lifetime: 1
-  Foreshadowing: {fileID: 5781616023491603706, guid: 85f1c02d987d8584ea08131aeb1f687f, type: 3}
+  lifetime: 2
 --- !u!95 &4872764980777018492
 Animator:
   serializedVersion: 3

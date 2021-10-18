@@ -27,7 +27,7 @@ public class GrumpkinAnimations : MonoBehaviour
 
         else if (target)
         {
-            m_Animator.Play("GrumpConcerned");
+            m_Animator.Play("GrumpkinConcerned");
         }
         else
         {
