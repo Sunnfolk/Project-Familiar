@@ -1504,7 +1504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5489310544911333261, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
       propertyPath: stage3ShootFq
-      value: 100
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5489310544911333261, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
       propertyPath: angerIncreaseFq
