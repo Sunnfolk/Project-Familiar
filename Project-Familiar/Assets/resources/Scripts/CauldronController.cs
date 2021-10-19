@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Threading;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 public class CauldronController : MonoBehaviour
@@ -27,8 +25,10 @@ public class CauldronController : MonoBehaviour
     public AudioClip Shoot;
     public ProjectileForeshadowing foreshadowing;
     [SerializeField] private float foreshadowDelay = 0.2f;
-    public Health Health;
-    public GameObject test;
+    public Health health;
+    public GameObject foreshadowLight;
+    public GameObject shootSpotlight;
+    [SerializeField] private float lightDelay = 0.2f;
 
 
     void Start()
@@ -41,7 +41,7 @@ public class CauldronController : MonoBehaviour
     }
     void Update()
     {
-        if (Health.IsDead) return;
+        if (health.IsDead) return;
         if (m_ShootCounter > 0)
         {
             m_ShootCounter -= Time.deltaTime;
@@ -63,6 +63,7 @@ public class CauldronController : MonoBehaviour
     {
         angle = Random.Range(minAngleRange, maxAngleRange);
         foreshadowing.Foreshadow(angle);
+        foreshadowLight.SetActive(true);
         StartCoroutine(nameof(Timer));
     }
 
@@ -70,7 +71,15 @@ public class CauldronController : MonoBehaviour
     {
         yield return new WaitForSeconds(foreshadowDelay);
         Instantiate(m_Projectile,m_Position, Quaternion.Euler(0,0,angle));
-        
+        shootSpotlight.SetActive(true);
+        foreshadowLight.SetActive(false);
+        StartCoroutine(nameof(Timer2));
+    }
+
+    private IEnumerator Timer2()
+    {
+        yield return new WaitForSeconds(lightDelay);
+        shootSpotlight.SetActive(false);
     }
 
     private void AngerMeter()

@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/GrumpkinAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/GrumpkinAnimations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ItemRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +113,7 @@
       <workItem from="1634300414549" duration="5954000" />
       <workItem from="1634425046517" duration="14285000" />
       <workItem from="1634543507527" duration="4954000" />
-      <workItem from="1634629549896" duration="2146000" />
+      <workItem from="1634629549896" duration="3585000" />
     </task>
     <servers />
   </component>
