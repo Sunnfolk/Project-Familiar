@@ -2,20 +2,21 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class ItemRequest : MonoBehaviour
 {
-    [SerializeField]private float aMeterDecrPerObj = 1;
+    [SerializeField] private float aMeterDecrPerObj = 1;
     [SerializeField] private float aMeterDecrAll3 = 10;
     private AngerMeter m_AngerMeter;
     private CauldronController m_CauldronController;
     public GameObject[] requestItems;
     public Transform[] spawnPoints;
     private int m_NumberOfItems;
-    private List<GameObject> m_SpawnedItems = new List<GameObject>();
+    [HideInInspector] public List<GameObject> spawnedItems = new List<GameObject>();
     private GameObject m_RightGameObject;
-    [HideInInspector]public bool m_Success;
+    private bool m_Success;
     private GameObject m_ObejctToDestroy;
     private bool m_Wrong;
     private int m_NumberOfSuccess;
@@ -38,7 +39,7 @@ public class ItemRequest : MonoBehaviour
             m_AngerMeter.meter -= aMeterDecrPerObj;
             m_Wrong = false;
             m_ObejctToDestroy = GameObject.FindWithTag(m_RightGameObject.tag);
-            m_SpawnedItems.Remove(m_ObejctToDestroy);
+            spawnedItems.Remove(m_ObejctToDestroy);
             Destroy(m_ObejctToDestroy);
             Destroy(m_RightGameObject);
             m_Success = false;
@@ -62,7 +63,7 @@ public class ItemRequest : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        foreach (var item in m_SpawnedItems)
+        foreach (var item in spawnedItems)
         {
             if (other.CompareTag(item.tag))
             {
@@ -82,7 +83,7 @@ public class ItemRequest : MonoBehaviour
         {
             m_NumberOfItems = Random.Range(0, requestItems.Length);
             var clone = Instantiate(requestItems[m_NumberOfItems], spawnPoints[item].position, new Quaternion()); 
-            m_SpawnedItems.Add(clone);
+            spawnedItems.Add(clone);
         }
     }
 }

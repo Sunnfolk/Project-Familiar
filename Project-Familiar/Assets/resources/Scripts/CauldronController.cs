@@ -25,9 +25,10 @@ public class CauldronController : MonoBehaviour
     public float angle;
     private AudioSource m_Audio;
     public AudioClip Shoot;
-    public ProjectileForeshadowing Foreshadowing;
+    public ProjectileForeshadowing foreshadowing;
     [SerializeField] private float foreshadowDelay = 0.2f;
     public Health Health;
+    public GameObject test;
 
 
     void Start()
@@ -61,7 +62,7 @@ public class CauldronController : MonoBehaviour
     private void ShootProjectile ()
     {
         angle = Random.Range(minAngleRange, maxAngleRange);
-        Foreshadowing.Foreshadow(angle);
+        foreshadowing.Foreshadow(angle);
         StartCoroutine(nameof(Timer));
     }
 
@@ -69,6 +70,7 @@ public class CauldronController : MonoBehaviour
     {
         yield return new WaitForSeconds(foreshadowDelay);
         Instantiate(m_Projectile,m_Position, Quaternion.Euler(0,0,angle));
+        
     }
 
     private void AngerMeter()

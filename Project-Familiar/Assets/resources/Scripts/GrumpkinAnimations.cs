@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GrumpkinAnimations : MonoBehaviour
@@ -10,9 +7,11 @@ public class GrumpkinAnimations : MonoBehaviour
     public bool target;
     private Animator m_Animator;
     private PlayerMove m_Move;
+    private ItemRequest m_ItemRequest;
 
     private void Start()
     {
+        m_ItemRequest = GameObject.Find("Cauldron").GetComponent<ItemRequest>();
         m_Animator = GetComponent<Animator>();
         m_Move = GetComponent<PlayerMove>();
     }
@@ -20,6 +19,17 @@ public class GrumpkinAnimations : MonoBehaviour
 
     void Update()
     {
+        foreach (var item in m_ItemRequest.spawnedItems)
+        {
+            if (gameObject.CompareTag(item.tag))
+            {
+                target = true;
+            }
+            else
+            {
+                target = false;
+            }
+        }
         if (playerClose)
         {
             m_Animator.Play("GrumpkinScared");
