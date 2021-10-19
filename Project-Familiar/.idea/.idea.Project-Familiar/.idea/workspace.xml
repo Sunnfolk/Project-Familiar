@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/HowToPlay.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/HowToPlay.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/HowToPlay.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/HowToPlay.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screen-Sheet_0 2.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screen-Sheet_0 2.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/ControlsButton.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/ControlsButton.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/MainMenuButton.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/prefabs/MainMenuButton.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Win Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Win Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +112,7 @@
       <workItem from="1634300414549" duration="5954000" />
       <workItem from="1634425046517" duration="14285000" />
       <workItem from="1634543507527" duration="4954000" />
-      <workItem from="1634629549896" duration="4182000" />
+      <workItem from="1634629549896" duration="5443000" />
     </task>
     <servers />
   </component>

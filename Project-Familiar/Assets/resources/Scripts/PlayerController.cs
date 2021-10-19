@@ -2,6 +2,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 public class PlayerController : MonoBehaviour
@@ -15,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private AudioSource m_AudioSource;
     public AudioClip Hurt;
     public PlayerAnimation m_Animation;
+    public CauldronController cauldron;
+    public float angerFqDecrease =0.05f;
     
     [HideInInspector] public bool isTakingDamage;
     [SerializeField] private float damageDuration = 0.3f;
@@ -31,6 +34,7 @@ public class PlayerController : MonoBehaviour
     {
         if (m_Request.getScore)
         {
+            cauldron.angerIncreaseFq -= angerFqDecrease;
             PlayerScore++;
             scoreDisplay.text = "Score: "+PlayerScore;
             m_Request.getScore = false;
