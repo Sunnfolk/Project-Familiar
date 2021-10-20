@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.Serialization;
 
 public class CauldronController : MonoBehaviour
@@ -23,12 +24,16 @@ public class CauldronController : MonoBehaviour
     public float angle;
     private AudioSource m_Audio;
     public AudioClip Shoot;
+    public Health health;
     public ProjectileForeshadowing foreshadowing;
     [SerializeField] private float foreshadowDelay = 0.2f;
-    public Health health;
-    public GameObject foreshadowLight;
-    public GameObject shootSpotlight;
     [SerializeField] private float lightDelay = 0.2f;
+    public Light2D spotlight;
+    public Light2D shootlight;
+    [SerializeField] private float cauldronLightFade = 0.01f;
+    [SerializeField] private float shootLightFade = 0.05f;
+    [SerializeField] private int cauldronLightMaxIntensity = 7;
+    [SerializeField] private int shootLightMaxIntensity = 4;
 
 
     void Start()
@@ -63,24 +68,43 @@ public class CauldronController : MonoBehaviour
     {
         angle = Random.Range(minAngleRange, maxAngleRange);
         foreshadowing.Foreshadow(angle);
-        foreshadowLight.SetActive(true);
+        //foreshadowLight.SetActive(true);
         StartCoroutine(nameof(Timer));
     }
 
     private IEnumerator Timer()
     {
+        for (float i = 0; i <= shootLightMaxIntensity; i++)
+        {
+            shootlight.intensity = i/10;
+            yield return new WaitForSeconds(shootLightFade);
+        } 
         yield return new WaitForSeconds(foreshadowDelay);
         Instantiate(m_Projectile,m_Position, Quaternion.Euler(0,0,angle));
-        shootSpotlight.SetActive(true);
-        foreshadowLight.SetActive(false);
-        StartCoroutine(nameof(Timer2));
+        //shootSpotlight.SetActive(true);
+        for (float i = shootLightMaxIntensity; i >= 0; i--)
+        {
+            shootlight.intensity = i/10;
+            yield return new WaitForSeconds(shootLightFade);
+        }
+        for (float i = 0; i <= cauldronLightMaxIntensity; i++)
+        {
+            spotlight.intensity = i/10;
+            yield return new WaitForSeconds(cauldronLightFade);
+        }
+        yield return new WaitForSeconds(lightDelay);
+        for (float i = cauldronLightMaxIntensity; i >= 0; i--)
+        {
+            spotlight.intensity = i/10;
+            yield return new WaitForSeconds(cauldronLightFade);
+        }
+        //StartCoroutine(nameof(Timer2));
     }
 
-    private IEnumerator Timer2()
+    /*private IEnumerator Timer2()
     {
-        yield return new WaitForSeconds(lightDelay);
-        shootSpotlight.SetActive(false);
-    }
+        
+    }*/
 
     private void AngerMeter()
     {
