@@ -82,11 +82,6 @@ public class CauldronController : MonoBehaviour
         yield return new WaitForSeconds(foreshadowDelay);
         Instantiate(m_Projectile,m_Position, Quaternion.Euler(0,0,angle));
         //shootSpotlight.SetActive(true);
-        for (float i = shootLightMaxIntensity; i >= 0; i--)
-        {
-            shootlight.intensity = i/10;
-            yield return new WaitForSeconds(shootLightFade);
-        }
         for (float i = 0; i <= cauldronLightMaxIntensity; i++)
         {
             spotlight.intensity = i/10;
@@ -97,6 +92,11 @@ public class CauldronController : MonoBehaviour
         {
             spotlight.intensity = i/10;
             yield return new WaitForSeconds(cauldronLightFade);
+        }
+        for (float i = shootLightMaxIntensity; i >= 0; i--)
+        {
+            shootlight.intensity = i/10;
+            yield return new WaitForSeconds(shootLightFade);
         }
         //StartCoroutine(nameof(Timer2));
     }
