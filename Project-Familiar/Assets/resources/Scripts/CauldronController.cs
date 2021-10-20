@@ -34,6 +34,7 @@ public class CauldronController : MonoBehaviour
     [SerializeField] private float shootLightFade = 0.05f;
     [SerializeField] private int cauldronLightMaxIntensity = 7;
     [SerializeField] private int shootLightMaxIntensity = 4;
+    public GameObject WarnLight;
 
 
     void Start()
@@ -143,9 +144,11 @@ public class CauldronController : MonoBehaviour
         {
             m_ShootFq = stage3ShootFq;
             stage3 = true;
+            WarnLight.SetActive(false);
         }
         else
         {
+            WarnLight.SetActive(true);
             stage3 = false;
         }
     }
