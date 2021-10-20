@@ -4820,6 +4820,7 @@ GameObject:
   - component: {fileID: 9012636133152910689}
   - component: {fileID: 784519158}
   - component: {fileID: 4872764980777018492}
+  - component: {fileID: -6087912518301170610}
   m_Layer: 3
   m_Name: Projectile
   m_TagString: Projectile
@@ -4965,6 +4966,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-6087912518301170610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012636133152910703}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af438a08feb2bb438669372c8442666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fireball: {fileID: 8300000, guid: 0b991a1275ce8ed478ef9b06fcb060d3, type: 3}
 --- !u!1 &9049129616873931537
 GameObject:
   m_ObjectHideFlags: 0

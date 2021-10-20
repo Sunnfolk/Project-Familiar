@@ -158,6 +158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerClose: 0
   target: 0
+  emotion: 0
 --- !u!1 &7835768809959316006
 GameObject:
   m_ObjectHideFlags: 0

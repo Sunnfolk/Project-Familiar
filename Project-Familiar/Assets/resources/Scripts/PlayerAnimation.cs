@@ -13,6 +13,7 @@ public class PlayerAnimation : MonoBehaviour
     private PlayerController m_Controller;
     private Health m_Health;
     private bool dying = false;
+    private bool summon;
 
     private static readonly int Walk = Animator.StringToHash("Walk");
     
@@ -30,13 +31,17 @@ public class PlayerAnimation : MonoBehaviour
         m_Move = GetComponent<PlayerMove>();
         m_Controller = GetComponent<PlayerController>();
         dying = false;
+        summon = true;
     }
     
     private void Update()
     {
         if (PauseMenu.GameIsPaused) return;
-
-        if (m_Health.IsDead)
+        if (summon)
+        {
+            m_Animator.Play("PlayerSummon");
+        }
+        else if (m_Health.IsDead)
         {
             m_Animator.Play("Death");
         }
@@ -71,5 +76,10 @@ public class PlayerAnimation : MonoBehaviour
             m_Animator.Play("Idle");
             
         }
+    }
+
+    private void StartIdle()
+    {
+        summon = false;
     }
 }

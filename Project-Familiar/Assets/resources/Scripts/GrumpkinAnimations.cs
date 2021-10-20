@@ -2,22 +2,19 @@ using UnityEngine;
 
 public class GrumpkinAnimations : MonoBehaviour
 {
-    public bool playerClose;
+    private bool playerClose;
     private bool sus;
-    public bool target;
-    private bool left;
+    private bool target;
     private Animator m_Animator;
-    private PlayerMove m_Move;
     private ItemRequest m_ItemRequest;
     private bool m_IsTarget;
-    public float emotion;
+    private float emotion;
 
     private void Start()
     {
         m_ItemRequest = GameObject.Find("Cauldron").GetComponent<ItemRequest>();
         m_Animator = GetComponent<Animator>();
-        m_Move = GetComponent<PlayerMove>();
-        emotion = Random.Range(0, 100);
+        emotion = Random.Range(0, 1000);
     }
 
 
@@ -47,7 +44,23 @@ public class GrumpkinAnimations : MonoBehaviour
         }
         else if (emotion <=10)
         {
+            m_Animator.Play("GrumpkinYes");
+        }
+        else if (emotion <=50)
+        {
+            m_Animator.Play("GrumpkinCool");
+        }
+        else if (emotion <=100)
+        {
             m_Animator.Play("GrumpkinSus");
+        }
+        else if (emotion <=200)
+        {
+            m_Animator.Play("GrumpkinTongue");
+        }
+        else if (emotion <=500)
+        {
+            m_Animator.Play("GrumpkinLeft");
         }
         else
         {
