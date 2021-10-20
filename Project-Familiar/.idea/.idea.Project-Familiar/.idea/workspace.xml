@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinYes.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Grumpkin/GrumpkinYes.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/GrumpkinAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/GrumpkinAnimations.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +113,7 @@
       <workItem from="1634425046517" duration="14285000" />
       <workItem from="1634543507527" duration="4954000" />
       <workItem from="1634629549896" duration="3585000" />
-      <workItem from="1634719827864" duration="691000" />
+      <workItem from="1634719827864" duration="2357000" />
     </task>
     <servers />
   </component>
