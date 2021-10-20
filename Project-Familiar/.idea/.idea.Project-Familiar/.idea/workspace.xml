@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/CauldronController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/SpawnScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/SpawnScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Player/PlayerSummon.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Player/PlayerSummon.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/Health.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
