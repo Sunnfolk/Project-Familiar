@@ -8,6 +8,7 @@ public class GrumpkinAnimations : MonoBehaviour
     private Animator m_Animator;
     private PlayerMove m_Move;
     private ItemRequest m_ItemRequest;
+    private bool m_IsTarget;
 
     private void Start()
     {
@@ -24,12 +25,14 @@ public class GrumpkinAnimations : MonoBehaviour
             if (gameObject.CompareTag(item.tag))
             {
                 target = true;
+                m_IsTarget = true;
             }
-            else
+            else if (!m_IsTarget)
             {
                 target = false;
             }
         }
+        m_IsTarget = false;
         if (playerClose)
         {
             m_Animator.Play("GrumpkinScared");
