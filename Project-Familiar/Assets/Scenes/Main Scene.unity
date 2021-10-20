@@ -1667,9 +1667,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5489310544911333261, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
+      propertyPath: spotlight
+      value: 
+      objectReference: {fileID: 1087773712}
+    - target: {fileID: 5489310544911333261, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
       propertyPath: lightDelay
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5489310544911333261, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
+      propertyPath: shootlight
+      value: 
+      objectReference: {fileID: 1799964264}
     - target: {fileID: 5489310544911333261, guid: ce1ceb7953dd1504c8bcdf0791fe4e35, type: 3}
       propertyPath: foreshadowing
       value: 
