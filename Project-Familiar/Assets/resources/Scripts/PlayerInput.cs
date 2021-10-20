@@ -3,14 +3,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
-   
-
     [HideInInspector] public Vector2 moveVector;
     [HideInInspector] public bool dash;
     [HideInInspector] public bool interact;
     [HideInInspector] public float KeyLastP;
     public Health Health;
-
+    private bool m_Startinganim;
+    
     void Update()
     {
         if (Health.IsDead)
@@ -18,7 +17,7 @@ public class PlayerInput : MonoBehaviour
             moveVector.x = 0f;
             moveVector.y = 0f;
         }
-        if (PauseMenu.GameIsPaused || Health.IsDead) return;
+        if (PauseMenu.GameIsPaused || Health.IsDead || !m_Startinganim) return;
         
         moveVector.x = (Keyboard.current.aKey.isPressed ? -1f : 0f) + (Keyboard.current.dKey.isPressed ? 1f : 0f);
         moveVector.y = (Keyboard.current.sKey.isPressed ? -1f : 0f) + (Keyboard.current.wKey.isPressed ? 1f : 0f);
@@ -29,6 +28,10 @@ public class PlayerInput : MonoBehaviour
         LastInputCheck();
     }
 
+    private void StartGame()
+    {
+        m_Startinganim = true;
+    }
     private void LastInputCheck()
     {
         if (Keyboard.current.wKey.isPressed)
