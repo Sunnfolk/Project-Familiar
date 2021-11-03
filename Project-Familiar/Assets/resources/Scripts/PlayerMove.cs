@@ -25,6 +25,13 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private AudioClip OutWater;
     private GrumpkinAnimations m_Grump;
 
+    private ActionsPlayerInput m_inputActions;
+
+    private void Awake()
+    {
+        m_inputActions = new ActionsPlayerInput();
+    }
+
     private void Start()
     {
         m_Input = GetComponent<PlayerInput>();

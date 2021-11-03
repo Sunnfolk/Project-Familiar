@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,23 +10,38 @@ public class PlayerInput : MonoBehaviour
     [HideInInspector] public float KeyLastP;
     public Health Health;
     private bool m_Startinganim;
-    
+
+    private ActionsPlayerInput m_inputActions;
+
+    private void Awake()
+    {
+        m_inputActions = new ActionsPlayerInput();
+    }
+
     void Update()
     {
         if (Health.IsDead)
         {
-            moveVector.x = 0f;
-            moveVector.y = 0f;
+            moveVector = m_inputActions.Player.Move.ReadValue<Vector2>();
         }
         if (PauseMenu.GameIsPaused || Health.IsDead || !m_Startinganim) return;
         
-        moveVector.x = (Keyboard.current.aKey.isPressed ? -1f : 0f) + (Keyboard.current.dKey.isPressed ? 1f : 0f);
-        moveVector.y = (Keyboard.current.sKey.isPressed ? -1f : 0f) + (Keyboard.current.wKey.isPressed ? 1f : 0f);
+        moveVector = m_inputActions.Player.Move.ReadValue<Vector2>();
 
-        dash = Keyboard.current.spaceKey.wasPressedThisFrame;
-        interact = Mouse.current.leftButton.wasPressedThisFrame;
+        dash = m_inputActions.Player.Dash.triggered;
+        interact = m_inputActions.Player.Interact.triggered;
         
         LastInputCheck();
+    }
+
+    private void OnEnable()
+    {
+        m_inputActions.Enable();
+    }
+
+    private void OnDisable()
+    {
+        m_inputActions.Disable();
     }
 
     private void StartGame()
