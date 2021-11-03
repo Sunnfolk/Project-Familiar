@@ -13,7 +13,10 @@ public class SceneControl : MonoBehaviour
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
-        m_PauseMenu.Resume();
+        if (m_PauseMenu != null)
+        {
+            m_PauseMenu.Resume();
+        }
     }
 
  public void QuitGame()

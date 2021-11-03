@@ -82,8 +82,7 @@ public class PlayerMove : MonoBehaviour
         }
         else if (!m_Dashing)
         {
-            m_Rigidbody2D.velocity =
-                Vector2.ClampMagnitude(new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed), moveSpeed);
+            m_Rigidbody2D.velocity = Vector2.ClampMagnitude(new Vector2(m_Input.moveVector.x * moveSpeed, m_Input.moveVector.y * moveSpeed), moveSpeed);
         }
         
     }
@@ -93,7 +92,8 @@ public class PlayerMove : MonoBehaviour
         m_StartTimer = true;
         m_Dashing = true;
         m_StartTimer = true;
-        if (m_Input.KeyLastP == 0)
+        m_Rigidbody2D.AddForce(m_Input.moveVector * dashSpeed, ForceMode2D.Impulse);
+        /*if (m_Input.KeyLastP == 0)
         {
             m_Rigidbody2D.AddForce(Vector2.up * dashSpeed, ForceMode2D.Impulse);
             //m_Animator.Play("Dash");
@@ -109,7 +109,7 @@ public class PlayerMove : MonoBehaviour
         if (m_Input.KeyLastP == 3)
         {
             m_Rigidbody2D.AddForce(Vector2.right * dashSpeed, ForceMode2D.Impulse);
-        }
+        }*/
         m_CanDash = false;
     }
 

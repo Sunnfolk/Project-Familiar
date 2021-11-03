@@ -1,15 +1,15 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused;
     public GameObject pauseMenuUI;
+    public PlayerInput input;
     
     void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (input.pause)
         {
             if (GameIsPaused)
             {
