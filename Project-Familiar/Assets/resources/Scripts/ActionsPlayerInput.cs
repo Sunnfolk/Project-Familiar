@@ -351,6 +351,14 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Mouse"",
+                    ""type"": ""Button"",
+                    ""id"": ""fe88a20b-57b8-483b-8066-bd5fffa2932c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -617,6 +625,72 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
                     ""action"": ""Gamepad"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""87a1f900-d326-4e57-a77b-7ec3fd8db4aa"",
+                    ""path"": ""<Mouse>/backButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6d9fb3a7-b7ac-461d-ae09-aa68f07eea1c"",
+                    ""path"": ""<Mouse>/forwardButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""004d16de-2353-4096-aa4a-6d2886eb908a"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bf2d0ef4-5c15-4a85-a8ba-014a7839a04b"",
+                    ""path"": ""<Mouse>/middleButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f3c25da8-398e-49eb-968d-de9d9d560ceb"",
+                    ""path"": ""<Mouse>/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""008bb724-9478-46ab-bcc3-4f41e8c07e68"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -632,6 +706,7 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Gamepad = m_UI.FindAction("Gamepad", throwIfNotFound: true);
+        m_UI_Mouse = m_UI.FindAction("Mouse", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -739,11 +814,13 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
     private readonly InputActionMap m_UI;
     private IUIActions m_UIActionsCallbackInterface;
     private readonly InputAction m_UI_Gamepad;
+    private readonly InputAction m_UI_Mouse;
     public struct UIActions
     {
         private @ActionsPlayerInput m_Wrapper;
         public UIActions(@ActionsPlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Gamepad => m_Wrapper.m_UI_Gamepad;
+        public InputAction @Mouse => m_Wrapper.m_UI_Mouse;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -756,6 +833,9 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
                 @Gamepad.started -= m_Wrapper.m_UIActionsCallbackInterface.OnGamepad;
                 @Gamepad.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnGamepad;
                 @Gamepad.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnGamepad;
+                @Mouse.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMouse;
+                @Mouse.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMouse;
+                @Mouse.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMouse;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
@@ -763,6 +843,9 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
                 @Gamepad.started += instance.OnGamepad;
                 @Gamepad.performed += instance.OnGamepad;
                 @Gamepad.canceled += instance.OnGamepad;
+                @Mouse.started += instance.OnMouse;
+                @Mouse.performed += instance.OnMouse;
+                @Mouse.canceled += instance.OnMouse;
             }
         }
     }
@@ -777,5 +860,6 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
     public interface IUIActions
     {
         void OnGamepad(InputAction.CallbackContext context);
+        void OnMouse(InputAction.CallbackContext context);
     }
 }
