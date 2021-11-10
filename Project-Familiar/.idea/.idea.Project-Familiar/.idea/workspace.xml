@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ControlSchemes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ControlSchemes.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Canvas.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Canvas.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/ControlsBg.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/ControlsBg.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/ControlsController-Sheet_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/ControlsController-Sheet_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/ControlsGamepad.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/ControlsGamepad.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screenwithoutcharacters-Sheet_0 1.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screenwithoutcharacters-Sheet_0 1.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screenwithoutcharacters-Sheet_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/Space_Witch_Title_Screenwithoutcharacters-Sheet_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Background art/Space_Witch_Title_Screenwithoutcharacters-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Background art/Space_Witch_Title_Screenwithoutcharacters-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Menus/ControlsController-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/Menus/ControlsController-Sheet.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/SunnfolkLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/resources/sprites/SunnfolkLogo.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Controls.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Controls.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/ActionsPlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ActionsPlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/ActionsPlayerInput.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/ActionsPlayerInput.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/New Animation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/animations/Bg Animations/New Animation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/UiScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/UiScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +125,11 @@
       <workItem from="1635941723758" duration="688000" />
       <workItem from="1635960339232" duration="2267000" />
       <workItem from="1636029181569" duration="321000" />
-      <workItem from="1636367054252" duration="4845000" />
+      <workItem from="1636367054252" duration="6294000" />
+      <workItem from="1636378550460" duration="602000" />
+      <workItem from="1636452292142" duration="869000" />
+      <workItem from="1636536942159" duration="1688000" />
+      <workItem from="1636550360948" duration="6402000" />
     </task>
     <servers />
   </component>

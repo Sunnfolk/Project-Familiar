@@ -18,6 +18,14 @@ public class UiScript : MonoBehaviour
 
     private void Update()
     {
+        if (SceneControl.IsKeyboard)
+        {
+            buttons[m_ButtonNumber].GetComponent<Image>().color =Color.white;
+        }
+        else
+        {
+            buttons[m_ButtonNumber].GetComponent<Image>().color =Color.yellow;
+        }
         m_Up = m_Input.UI.Up.triggered;
         m_Down = m_Input.UI.Down.triggered;
         m_Activate = m_Input.UI.ActivateButton.triggered;
