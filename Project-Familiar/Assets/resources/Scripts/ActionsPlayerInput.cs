@@ -359,6 +359,30 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Up"",
+                    ""type"": ""Button"",
+                    ""id"": ""62e86bd4-72f3-4aff-98ad-a8f965f0dc51"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Down"",
+                    ""type"": ""Button"",
+                    ""id"": ""1f4e15b3-c534-4753-8e3e-796bf0cb7b19"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Activate Button"",
+                    ""type"": ""Button"",
+                    ""id"": ""c91df68d-cb0b-4af3-a5f3-0236217260b3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -691,6 +715,83 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
                     ""action"": ""Mouse"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b9ab36fb-34a5-46a1-8ff5-cb8b66633d2c"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""21b9dfe9-f356-4de2-9516-112270ed321c"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""77247027-0a9c-4f29-8e2b-a09c87c8908a"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1396132a-7476-4ff1-a225-0ab47250815e"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""20192a01-7d82-4e3c-9358-28ff4ce75899"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c341e20e-807f-4391-b4d9-c8f33939c79d"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Down"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9b22f0d4-3ec3-4c79-b087-8d0ad268f539"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Activate Button"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -707,6 +808,9 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Gamepad = m_UI.FindAction("Gamepad", throwIfNotFound: true);
         m_UI_Mouse = m_UI.FindAction("Mouse", throwIfNotFound: true);
+        m_UI_Up = m_UI.FindAction("Up", throwIfNotFound: true);
+        m_UI_Down = m_UI.FindAction("Down", throwIfNotFound: true);
+        m_UI_ActivateButton = m_UI.FindAction("Activate Button", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -815,12 +919,18 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
     private IUIActions m_UIActionsCallbackInterface;
     private readonly InputAction m_UI_Gamepad;
     private readonly InputAction m_UI_Mouse;
+    private readonly InputAction m_UI_Up;
+    private readonly InputAction m_UI_Down;
+    private readonly InputAction m_UI_ActivateButton;
     public struct UIActions
     {
         private @ActionsPlayerInput m_Wrapper;
         public UIActions(@ActionsPlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Gamepad => m_Wrapper.m_UI_Gamepad;
         public InputAction @Mouse => m_Wrapper.m_UI_Mouse;
+        public InputAction @Up => m_Wrapper.m_UI_Up;
+        public InputAction @Down => m_Wrapper.m_UI_Down;
+        public InputAction @ActivateButton => m_Wrapper.m_UI_ActivateButton;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -836,6 +946,15 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
                 @Mouse.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMouse;
                 @Mouse.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMouse;
                 @Mouse.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMouse;
+                @Up.started -= m_Wrapper.m_UIActionsCallbackInterface.OnUp;
+                @Up.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnUp;
+                @Up.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnUp;
+                @Down.started -= m_Wrapper.m_UIActionsCallbackInterface.OnDown;
+                @Down.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnDown;
+                @Down.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnDown;
+                @ActivateButton.started -= m_Wrapper.m_UIActionsCallbackInterface.OnActivateButton;
+                @ActivateButton.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnActivateButton;
+                @ActivateButton.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnActivateButton;
             }
             m_Wrapper.m_UIActionsCallbackInterface = instance;
             if (instance != null)
@@ -846,6 +965,15 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
                 @Mouse.started += instance.OnMouse;
                 @Mouse.performed += instance.OnMouse;
                 @Mouse.canceled += instance.OnMouse;
+                @Up.started += instance.OnUp;
+                @Up.performed += instance.OnUp;
+                @Up.canceled += instance.OnUp;
+                @Down.started += instance.OnDown;
+                @Down.performed += instance.OnDown;
+                @Down.canceled += instance.OnDown;
+                @ActivateButton.started += instance.OnActivateButton;
+                @ActivateButton.performed += instance.OnActivateButton;
+                @ActivateButton.canceled += instance.OnActivateButton;
             }
         }
     }
@@ -861,5 +989,8 @@ public class @ActionsPlayerInput : IInputActionCollection, IDisposable
     {
         void OnGamepad(InputAction.CallbackContext context);
         void OnMouse(InputAction.CallbackContext context);
+        void OnUp(InputAction.CallbackContext context);
+        void OnDown(InputAction.CallbackContext context);
+        void OnActivateButton(InputAction.CallbackContext context);
     }
 }

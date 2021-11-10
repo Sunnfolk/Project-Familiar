@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &82641198 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3039143039006459681, guid: bde48007f0995f84b885c85f272ba331, type: 3}
+  m_PrefabInstance: {fileID: 3039143038453146808}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &194732651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,6 +1297,7 @@ GameObject:
   - component: {fileID: 2136806934}
   - component: {fileID: 2136806938}
   - component: {fileID: 2136806939}
+  - component: {fileID: 2136806940}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1407,6 +1419,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 2066503505}
   highScoreDisplay: {fileID: 622931526}
+--- !u!114 &2136806940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136806933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cead329aeaaef2048b80db8c97faa8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 809232166}
+  - {fileID: 82641198}
+  - {fileID: 1623082342}
 --- !u!1001 &3039143038453146808
 PrefabInstance:
   m_ObjectHideFlags: 0
