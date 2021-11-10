@@ -56,7 +56,6 @@ public class CauldronController : MonoBehaviour
         {
             m_ShootCounter = m_ShootFq;
             ShootProjectile();
-            m_Audio.PlayOneShot(Shoot);
         }
         if (m_ShootFq <= 0)
         {
@@ -82,6 +81,7 @@ public class CauldronController : MonoBehaviour
         } 
         yield return new WaitForSeconds(foreshadowDelay);
         Instantiate(m_Projectile,m_Position, Quaternion.Euler(0,0,angle));
+        m_Audio.PlayOneShot(Shoot);
         //shootSpotlight.SetActive(true);
         for (float i = 0; i <= cauldronLightMaxIntensity; i++)
         {

@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class UiScript : MonoBehaviour
@@ -15,7 +13,7 @@ public class UiScript : MonoBehaviour
     private void Awake()
     {
         m_Input = new ActionsPlayerInput();
-        buttons[m_ButtonNumber].GetComponent<Image>().color =Color.red;
+        buttons[m_ButtonNumber].GetComponent<Image>().color =Color.yellow;
     }
 
     private void Update()
@@ -38,7 +36,8 @@ public class UiScript : MonoBehaviour
             {
                 m_ButtonNumber = buttons.Length - 1;
             }
-            buttons[m_ButtonNumber].GetComponent<Image>().color =Color.red;
+            buttons[m_ButtonNumber].GetComponent<Image>().color =Color.yellow;
+           
         }
         if (m_Down)
         {
@@ -51,10 +50,10 @@ public class UiScript : MonoBehaviour
             {
                 m_ButtonNumber = 0;
             }
-            buttons[m_ButtonNumber].GetComponent<Image>().color =Color.red;
+            buttons[m_ButtonNumber].GetComponent<Image>().color =Color.yellow;
         }
-        
     }
+    
     private void OnEnable()
     {
         m_Input.Enable();
