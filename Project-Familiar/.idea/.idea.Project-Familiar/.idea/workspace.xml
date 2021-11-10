@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2f59f44a-7eb5-4a81-b636-9e6bc185e975" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Familiar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/resources/Scripts/PlayerMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +121,8 @@
       <workItem from="1635079450398" duration="1645000" />
       <workItem from="1635429735964" duration="1312000" />
       <workItem from="1635758965169" duration="2273000" />
-      <workItem from="1635941723758" duration="688000" />
+      <workItem from="1635941723758" duration="1278000" />
+      <workItem from="1635973111652" duration="314000" />
     </task>
     <servers />
   </component>
