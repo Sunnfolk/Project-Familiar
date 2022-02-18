@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SpaceWitchLividIdle-Sheet_1: 7418007912184691085
+      SpaceWitchLividIdle-Sheet_2: -7849611962037259563
+      SpaceWitchLividIdle-Sheet_3: 6413861343733508939
+      SpaceWitchLividIdle-Sheet_4: -208864886831461051
+      SpaceWitchLividIdle-Sheet_5: -609139073794002525
+      SpaceWitchLividIdle-Sheet_0: 8402053969703128936
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -424,6 +425,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pinkowlDeathAnimationBack-Sheet_11: -6901756322138121152
+      pinkowlDeathAnimationBack-Sheet_0: 5593799638182904181
+      pinkowlDeathAnimationBack-Sheet_2: 939530751880824252
+      pinkowlDeathAnimationBack-Sheet_4: 5758553217946385090
+      pinkowlDeathAnimationBack-Sheet_3: -2301284992547111362
+      pinkowlDeathAnimationBack-Sheet_7: -4123698279842545147
+      pinkowlDeathAnimationBack-Sheet_12: -845998092871039149
+      pinkowlDeathAnimationBack-Sheet_5: -4704450915650721551
+      pinkowlDeathAnimationBack-Sheet_6: 9059678696937709683
+      pinkowlDeathAnimationBack-Sheet_8: 3816316400218438482
+      pinkowlDeathAnimationBack-Sheet_1: -871735580344859602
+      pinkowlDeathAnimationBack-Sheet_9: 7106857735577131288
+      pinkowlDeathAnimationBack-Sheet_10: -204736692411843324
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

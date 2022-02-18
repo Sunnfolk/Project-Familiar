@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      EmotionsOfGrumpkin-Sheet_0: -2806308223831655630
+      EmotionsOfGrumpkin-Sheet_4: 107033154560490431
+      EmotionsOfGrumpkin-Sheet_5: -721330789430316033
+      EmotionsOfGrumpkin-Sheet_3: -7612916116602850138
+      EmotionsOfGrumpkin-Sheet_2: -605178190291042504
+      EmotionsOfGrumpkin-Sheet_1: 1696780478129564566
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

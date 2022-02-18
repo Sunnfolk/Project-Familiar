@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -258,6 +259,13 @@ TextureImporter:
     secondaryTextures:
     - texture: {fileID: 2800000, guid: abb99431b12aeba439dfeab9c600cbe3, type: 3}
       name: _NormalMap
+    nameFileIdTable:
+      pinkowFrontIdlel-Sheet_3: 1125167631748828129
+      pinkowFrontIdlel-Sheet_1: -7194340881959190497
+      pinkowFrontIdlel-Sheet_2: 3427511909560296034
+      pinkowFrontIdlel-Sheet_0: 3199729989438715099
+      pinkowFrontIdlel-Sheet_4: -4005359732089662427
+      pinkowFrontIdlel-Sheet_5: 5588255318976810416
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

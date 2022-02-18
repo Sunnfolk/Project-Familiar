@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -304,6 +305,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      "Uu\xE6 Grumpkin-Sheet_6": -2028741463931996677
+      "Uu\xE6 Grumpkin-Sheet_1": 3625985772283524272
+      "Uu\xE6 Grumpkin-Sheet_3": 2369933806700768577
+      "Uu\xE6 Grumpkin-Sheet_5": 1424940645899964313
+      "Uu\xE6 Grumpkin-Sheet_4": 2136963504932334584
+      "Uu\xE6 Grumpkin-Sheet_2": 816655375510583421
+      "Uu\xE6 Grumpkin-Sheet_7": -6778156673018331156
+      "Uu\xE6 Grumpkin-Sheet_0": 6227773834295383206
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

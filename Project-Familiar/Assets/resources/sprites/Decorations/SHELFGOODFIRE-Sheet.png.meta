@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -208,6 +209,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SHELFGOODFIRE-Sheet_1: 8130242288908519604
+      SHELFGOODFIRE-Sheet_3: -9204138072985204161
+      SHELFGOODFIRE-Sheet_0: -2554872951213605626
+      SHELFGOODFIRE-Sheet_2: 7741264181003466902
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

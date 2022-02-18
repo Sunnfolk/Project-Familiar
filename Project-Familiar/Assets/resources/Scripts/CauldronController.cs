@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 using UnityEngine.Serialization;
 
 public class CauldronController : MonoBehaviour
@@ -28,8 +28,8 @@ public class CauldronController : MonoBehaviour
     public ProjectileForeshadowing foreshadowing;
     [SerializeField] private float foreshadowDelay = 0.2f;
     [SerializeField] private float lightDelay = 0.2f;
-    public Light2D spotlight;
-    public Light2D shootlight;
+    public UnityEngine.Rendering.Universal.Light2D spotlight;
+    public UnityEngine.Rendering.Universal.Light2D shootlight;
     [SerializeField] private float cauldronLightFade = 0.01f;
     [SerializeField] private float shootLightFade = 0.05f;
     [SerializeField] private int cauldronLightMaxIntensity = 7;

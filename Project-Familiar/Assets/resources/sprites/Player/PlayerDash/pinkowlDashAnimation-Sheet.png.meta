@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -304,6 +305,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pinkowlDashAnimation-Sheet_1: -5131176821419535905
+      pinkowlDashAnimation-Sheet_6: -7334350993088354844
+      pinkowlDashAnimation-Sheet_0: -1584281589079743684
+      pinkowlDashAnimation-Sheet_7: 7125310911770103397
+      pinkowlDashAnimation-Sheet_4: 6131483167952420195
+      pinkowlDashAnimation-Sheet_5: -6827562951693982441
+      pinkowlDashAnimation-Sheet_2: -3970056209151496559
+      pinkowlDashAnimation-Sheet_3: -7721800397276880040
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

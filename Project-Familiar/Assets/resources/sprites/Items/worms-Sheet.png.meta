@@ -45,6 +45,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -280,6 +281,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      worms-Sheet_2: -2522287101457178772
+      worms-Sheet_5: 4791002235757786369
+      worms-Sheet_0: -5600143724003691188
+      worms-Sheet_4: 8184753890174964540
+      worms-Sheet_3: -8201819171847229579
+      worms-Sheet_6: -5385508538975940541
+      worms-Sheet_1: 3761803278655483441
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

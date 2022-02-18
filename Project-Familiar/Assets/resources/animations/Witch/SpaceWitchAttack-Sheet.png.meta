@@ -45,6 +45,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -280,6 +281,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SpaceWitchAttack-Sheet_5: 4239261162234376929
+      SpaceWitchAttack-Sheet_2: -674227760479400458
+      SpaceWitchAttack-Sheet_3: 6635179668687863529
+      SpaceWitchAttack-Sheet_1: -5261608816388891491
+      SpaceWitchAttack-Sheet_0: 7277642575394030589
+      SpaceWitchAttack-Sheet_4: 6474009600980135223
+      SpaceWitchAttack-Sheet_6: -8469031256102911335
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

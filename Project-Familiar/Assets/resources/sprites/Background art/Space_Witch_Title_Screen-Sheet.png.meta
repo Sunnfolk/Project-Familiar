@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -208,6 +209,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Space_Witch_Title_Screen-Sheet_1: -497871917575774982
+      Space_Witch_Title_Screen-Sheet_3: 4471685626688165271
+      Space_Witch_Title_Screen-Sheet_0: 8945748302813659754
+      Space_Witch_Title_Screen-Sheet_2: 7553059986506872563
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

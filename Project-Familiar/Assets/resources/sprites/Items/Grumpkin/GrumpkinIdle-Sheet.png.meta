@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      GrumpkinIdle-Sheet_2: 5325568439097637862
+      GrumpkinIdle-Sheet_3: -8999799775426858168
+      GrumpkinIdle-Sheet_1: 2191380101322585793
+      GrumpkinIdle-Sheet_0: 8878096649031544407
+      GrumpkinIdle-Sheet_5: 6380482075148361471
+      GrumpkinIdle-Sheet_4: 3767309955297668710
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

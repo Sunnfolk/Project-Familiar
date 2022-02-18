@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,6 +257,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Concerned pumpkin-Sheet_5: 4742203470931579593
+      Concerned pumpkin-Sheet_4: 843906477971636142
+      Concerned pumpkin-Sheet_2: -3416151248983015798
+      Concerned pumpkin-Sheet_3: -105687959416837100
+      Concerned pumpkin-Sheet_1: 5689061713222278888
+      Concerned pumpkin-Sheet_0: 2487777275610871435
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

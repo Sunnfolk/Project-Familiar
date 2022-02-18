@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pinkowlWalkWaterBACK-Sheet_4: -6072395560131447607
+      pinkowlWalkWaterBACK-Sheet_0: -1380886593420971920
+      pinkowlWalkWaterBACK-Sheet_2: 8481461379789055579
+      pinkowlWalkWaterBACK-Sheet_1: -8612172268622842173
+      pinkowlWalkWaterBACK-Sheet_3: -8474632872731618849
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

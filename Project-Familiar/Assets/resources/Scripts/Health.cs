@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
+
 
 public class Health : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     public Sprite TwoHeatlhSprite;
     public Sprite OneHeatlhSprite;
     [HideInInspector] public bool IsDead;
-    public Light2D GlobalLight;
+    public UnityEngine.Rendering.Universal.Light2D GlobalLight;
     public float fadeTime = 0.1f;
     private bool m_Switch1;
     void Start()

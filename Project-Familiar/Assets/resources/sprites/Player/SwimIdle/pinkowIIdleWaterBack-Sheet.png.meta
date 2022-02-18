@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pinkowIIdleWaterBack-Sheet_0: -1665910819019032418
+      pinkowIIdleWaterBack-Sheet_1: 5109702972829056336
+      pinkowIIdleWaterBack-Sheet_4: 414000976798632866
+      pinkowIIdleWaterBack-Sheet_2: -3099382206783335143
+      pinkowIIdleWaterBack-Sheet_3: -253696237675061762
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

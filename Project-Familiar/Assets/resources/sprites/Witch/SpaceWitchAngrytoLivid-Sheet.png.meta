@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -496,6 +497,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SpaceWitchAngrytoLivid-Sheet_7: 1665336611672325074
+      SpaceWitchAngrytoLivid-Sheet_13: -82782258771238235
+      SpaceWitchAngrytoLivid-Sheet_3: 7970126820498164999
+      SpaceWitchAngrytoLivid-Sheet_10: 7508621104243046781
+      SpaceWitchAngrytoLivid-Sheet_5: -5090964977578918051
+      SpaceWitchAngrytoLivid-Sheet_1: 3157828182068752210
+      SpaceWitchAngrytoLivid-Sheet_2: -1975074614781596503
+      SpaceWitchAngrytoLivid-Sheet_12: -2519824670003664153
+      SpaceWitchAngrytoLivid-Sheet_9: -6191427198792885534
+      SpaceWitchAngrytoLivid-Sheet_14: 5401971786049844934
+      SpaceWitchAngrytoLivid-Sheet_4: 3483633542665688114
+      SpaceWitchAngrytoLivid-Sheet_0: -110329687392285777
+      SpaceWitchAngrytoLivid-Sheet_11: -4313823200722874936
+      SpaceWitchAngrytoLivid-Sheet_15: -5143143445118781795
+      SpaceWitchAngrytoLivid-Sheet_6: -7470156933318683621
+      SpaceWitchAngrytoLivid-Sheet_8: 6111696045763333704
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

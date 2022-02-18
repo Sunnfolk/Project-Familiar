@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      FIRE_BALL-Sheet_1: -1820695504690685055
+      FIRE_BALL-Sheet_0: -9154043355323535584
+      FIRE_BALL-Sheet_3: -4250832243394643247
+      FIRE_BALL-Sheet_4: -1258182826359733026
+      FIRE_BALL-Sheet_2: -5362197628373430777
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

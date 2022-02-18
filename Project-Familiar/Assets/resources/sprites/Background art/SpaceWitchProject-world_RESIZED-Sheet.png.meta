@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -208,6 +209,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SpaceWitchProject-world_RESIZED-Sheet_3: -8767495842827767205
+      SpaceWitchProject-world_RESIZED-Sheet_1: -6796434974137428140
+      SpaceWitchProject-world_RESIZED-Sheet_2: -6582396088157459232
+      SpaceWitchProject-world_RESIZED-Sheet_0: 7256184252033794440
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

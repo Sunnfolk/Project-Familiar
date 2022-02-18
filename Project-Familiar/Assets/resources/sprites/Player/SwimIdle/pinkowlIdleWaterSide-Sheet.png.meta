@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pinkowlIdleWaterSide-Sheet_0: -7268057867295052774
+      pinkowlIdleWaterSide-Sheet_3: -7855875574431106368
+      pinkowlIdleWaterSide-Sheet_4: -8441313628330327035
+      pinkowlIdleWaterSide-Sheet_1: 8562571279918845988
+      pinkowlIdleWaterSide-Sheet_2: 8331004157986627778
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

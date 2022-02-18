@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -376,6 +377,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pinkowlPoofAnimation-Sheet_4: -2966055113417436440
+      pinkowlPoofAnimation-Sheet_7: 6683498250792801375
+      pinkowlPoofAnimation-Sheet_1: -3087137324398182956
+      pinkowlPoofAnimation-Sheet_3: -2151586762491037777
+      pinkowlPoofAnimation-Sheet_8: 606441907434664140
+      pinkowlPoofAnimation-Sheet_2: 6817377420275232994
+      pinkowlPoofAnimation-Sheet_10: -1157461183285229507
+      pinkowlPoofAnimation-Sheet_0: -8795627287782835731
+      pinkowlPoofAnimation-Sheet_5: -1676732702170786260
+      pinkowlPoofAnimation-Sheet_9: 702278471087441052
+      pinkowlPoofAnimation-Sheet_6: 3072678349396684673
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

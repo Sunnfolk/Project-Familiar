@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      RoomBackground-Sheet_2: 4747250439926036269
+      RoomBackground-Sheet_3: 1481949690898591767
+      RoomBackground-Sheet_4: 9042456678134393241
+      RoomBackground-Sheet_0: -5772464446677069446
+      RoomBackground-Sheet_1: -1480981883887288385
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
