@@ -23,9 +23,11 @@ public class ItemRequest : MonoBehaviour
     public bool getScore;
     private AudioSource m_AudioSource;
     public AudioClip Plop;
+    private WitchAudioManager _witchAudioManager;
 
     private void Start()
     {
+        _witchAudioManager = GetComponent<WitchAudioManager>();
         m_CauldronController = GetComponent<CauldronController>();
         m_AngerMeter = GameObject.Find("AngerMeter").GetComponent<AngerMeter>();
         SpawnRequests();
@@ -45,6 +47,7 @@ public class ItemRequest : MonoBehaviour
             m_Success = false;
             m_NumberOfSuccess++;
             getScore = true;
+            _witchAudioManager.CorrectItemSound();
             m_AudioSource.PlayOneShot(Plop);
         }
 
@@ -57,6 +60,7 @@ public class ItemRequest : MonoBehaviour
 
         if (m_Wrong)
         {
+            _witchAudioManager.WrongItemSound();
             m_CauldronController.angerIncreaseFq -= 0.5f;
             m_Wrong = false;
         }
