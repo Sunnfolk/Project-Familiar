@@ -35,19 +35,25 @@ public class CauldronController : MonoBehaviour
     [SerializeField] private int cauldronLightMaxIntensity = 7;
     [SerializeField] private int shootLightMaxIntensity = 4;
     public GameObject WarnLight;
+    private WitchAudioManager _witchAudioManager;
 
 
-    void Start()
+    private void Start()
     {
+        _witchAudioManager = GetComponent<WitchAudioManager>();
         m_AngerMeter = GameObject.Find("AngerMeter").GetComponent<AngerMeter>();
         m_ShootCounter = m_ShootFq;
         m_Anger = angerIncreaseFq;
         m_Position = transform.position;
         m_Audio = GetComponent<AudioSource>();
     }
-    void Update()
+    private void Update()
     {
-        if (health.IsDead) return;
+        if (health.IsDead)
+        {
+            _witchAudioManager.GameOverSound();
+            return;
+        }
         if (m_ShootCounter > 0)
         {
             m_ShootCounter -= Time.deltaTime;
@@ -125,6 +131,7 @@ public class CauldronController : MonoBehaviour
         {
             m_ShootFq = stage1ShootFq;
             stage1 = true;
+            _witchAudioManager.AngerSound();
         }
         else 
         {
@@ -135,6 +142,7 @@ public class CauldronController : MonoBehaviour
         {
             m_ShootFq = stage2ShootFq;
             stage2 = true;
+            _witchAudioManager.AngerSound();
         }
         else
         {
@@ -144,6 +152,7 @@ public class CauldronController : MonoBehaviour
         {
             m_ShootFq = stage3ShootFq;
             stage3 = true;
+            _witchAudioManager.AngerSound();
             WarnLight.SetActive(false);
         }
         else
